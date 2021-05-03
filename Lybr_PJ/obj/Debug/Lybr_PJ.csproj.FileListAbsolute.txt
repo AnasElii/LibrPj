@@ -1,0 +1,3 @@
+C:\Users\Aninoss\Documents\Visual Studio 2015\Projects\Lybr_PJ\x_prj_biblio\bin\Debug\x_prj_biblio.exe.config
+C:\Users\Aninoss\Documents\Visual Studio 2015\Projects\Lybr_PJ\x_prj_biblio\obj\Debug\x_prj_biblio.exe
+C:\Users\Aninoss\Documents\Visual Studio 2015\Projects\Lybr_PJ\x_prj_biblio\obj\Debug\x_prj_biblio.pdb

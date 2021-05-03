@@ -1,0 +1,86 @@
+D:\m_abdlah\x_prj_biblio\x_prj_biblio\bin\Debug\x_prj_biblio.exe.config
+D:\m_abdlah\x_prj_biblio\x_prj_biblio\bin\Debug\x_prj_biblio.exe
+D:\m_abdlah\x_prj_biblio\x_prj_biblio\bin\Debug\x_prj_biblio.pdb
+D:\m_abdlah\x_prj_biblio\x_prj_biblio\obj\Debug\x_prj_biblio.csprojAssemblyReference.cache
+D:\m_abdlah\x_prj_biblio\x_prj_biblio\obj\Debug\x_prj_biblio.Admin.resources
+D:\m_abdlah\x_prj_biblio\x_prj_biblio\obj\Debug\x_prj_biblio.Properties.Resources.resources
+D:\m_abdlah\x_prj_biblio\x_prj_biblio\obj\Debug\x_prj_biblio.User.resources
+D:\m_abdlah\x_prj_biblio\x_prj_biblio\obj\Debug\x_prj_biblio.csproj.GenerateResource.cache
+D:\m_abdlah\x_prj_biblio\x_prj_biblio\obj\Debug\x_prj_biblio.csproj.CoreCompileInputs.cache
+D:\m_abdlah\x_prj_biblio\x_prj_biblio\obj\Debug\x_prj_biblio.exe
+D:\m_abdlah\x_prj_biblio\x_prj_biblio\obj\Debug\x_prj_biblio.pdb
+D:\m_abdlah\x_prj_biblio\x_prj_biblio\obj\Debug\x_prj_biblio.Gerer_Bibliothecaire.resources
+D:\m_abdlah\x_prj_biblio\x_prj_biblio\obj\Debug\x_prj_biblio.Ajouter_Bibliothecaire.resources
+D:\m_abdlah\x_prj_biblio\x_prj_biblio\obj\Debug\x_prj_biblio.Fconnexion.resources
+D:\m_abdlah\x_prj_biblio\x_prj_biblio\obj\Debug\x_prj_biblio.Ajouter_Autor.resources
+D:\m_abdlah\x_prj_biblio\x_prj_biblio\obj\Debug\x_prj_biblio.Gerer_Autor.resources
+D:\m_abdlah\x_prj_biblio\x_prj_biblio\obj\Debug\x_prj_biblio.Supprimer_Autor.resources
+D:\m_abdlah\x_prj_biblio\x_prj_biblio\obj\Debug\x_prj_biblio.Add_Borrowing.resources
+D:\m_abdlah\x_prj_biblio\x_prj_biblio\obj\Debug\x_prj_biblio.Gerer_Borrowing.resources
+C:\Users\hamza\Desktop\x_prj_biblio\x_prj_biblio\bin\Debug\x_prj_biblio.exe.config
+C:\Users\hamza\Desktop\x_prj_biblio\x_prj_biblio\bin\Debug\x_prj_biblio.exe
+C:\Users\hamza\Desktop\x_prj_biblio\x_prj_biblio\bin\Debug\x_prj_biblio.pdb
+C:\Users\hamza\Desktop\x_prj_biblio\x_prj_biblio\obj\Debug\x_prj_biblio.csprojAssemblyReference.cache
+C:\Users\hamza\Desktop\x_prj_biblio\x_prj_biblio\obj\Debug\x_prj_biblio.Add_Book.resources
+C:\Users\hamza\Desktop\x_prj_biblio\x_prj_biblio\obj\Debug\x_prj_biblio.Add_Borrowing.resources
+C:\Users\hamza\Desktop\x_prj_biblio\x_prj_biblio\obj\Debug\x_prj_biblio.Admin.resources
+C:\Users\hamza\Desktop\x_prj_biblio\x_prj_biblio\obj\Debug\x_prj_biblio.Ajouter_Autor.resources
+C:\Users\hamza\Desktop\x_prj_biblio\x_prj_biblio\obj\Debug\x_prj_biblio.Ajouter_Bibliothecaire.resources
+C:\Users\hamza\Desktop\x_prj_biblio\x_prj_biblio\obj\Debug\x_prj_biblio.Edit_Delete_Book.resources
+C:\Users\hamza\Desktop\x_prj_biblio\x_prj_biblio\obj\Debug\x_prj_biblio.Gerer_Autor.resources
+C:\Users\hamza\Desktop\x_prj_biblio\x_prj_biblio\obj\Debug\x_prj_biblio.Gerer_Bibliothecaire.resources
+C:\Users\hamza\Desktop\x_prj_biblio\x_prj_biblio\obj\Debug\x_prj_biblio.Fconnexion.resources
+C:\Users\hamza\Desktop\x_prj_biblio\x_prj_biblio\obj\Debug\x_prj_biblio.Gerer_Borrowing.resources
+C:\Users\hamza\Desktop\x_prj_biblio\x_prj_biblio\obj\Debug\x_prj_biblio.Manage_Books.resources
+C:\Users\hamza\Desktop\x_prj_biblio\x_prj_biblio\obj\Debug\x_prj_biblio.Properties.Resources.resources
+C:\Users\hamza\Desktop\x_prj_biblio\x_prj_biblio\obj\Debug\x_prj_biblio.Supprimer_Autor.resources
+C:\Users\hamza\Desktop\x_prj_biblio\x_prj_biblio\obj\Debug\x_prj_biblio.User.resources
+C:\Users\hamza\Desktop\x_prj_biblio\x_prj_biblio\obj\Debug\x_prj_biblio.csproj.GenerateResource.cache
+C:\Users\hamza\Desktop\x_prj_biblio\x_prj_biblio\obj\Debug\x_prj_biblio.csproj.CoreCompileInputs.cache
+C:\Users\hamza\Desktop\x_prj_biblio\x_prj_biblio\obj\Debug\x_prj_biblio.exe
+C:\Users\hamza\Desktop\x_prj_biblio\x_prj_biblio\obj\Debug\x_prj_biblio.pdb
+C:\Users\HP\Desktop\LAST VERSION X_PRJ\x_prj_biblio\x_prj_biblio\x_prj_biblio\bin\Debug\x_prj_biblio.exe.config
+C:\Users\HP\Desktop\LAST VERSION X_PRJ\x_prj_biblio\x_prj_biblio\x_prj_biblio\bin\Debug\x_prj_biblio.exe
+C:\Users\HP\Desktop\LAST VERSION X_PRJ\x_prj_biblio\x_prj_biblio\x_prj_biblio\bin\Debug\x_prj_biblio.pdb
+C:\Users\HP\Desktop\LAST VERSION X_PRJ\x_prj_biblio\x_prj_biblio\x_prj_biblio\obj\Debug\x_prj_biblio.csprojAssemblyReference.cache
+C:\Users\HP\Desktop\LAST VERSION X_PRJ\x_prj_biblio\x_prj_biblio\x_prj_biblio\obj\Debug\x_prj_biblio.Add_Book.resources
+C:\Users\HP\Desktop\LAST VERSION X_PRJ\x_prj_biblio\x_prj_biblio\x_prj_biblio\obj\Debug\x_prj_biblio.Add_Borrowing.resources
+C:\Users\HP\Desktop\LAST VERSION X_PRJ\x_prj_biblio\x_prj_biblio\x_prj_biblio\obj\Debug\x_prj_biblio.Admin.resources
+C:\Users\HP\Desktop\LAST VERSION X_PRJ\x_prj_biblio\x_prj_biblio\x_prj_biblio\obj\Debug\x_prj_biblio.Ajouter_Autor.resources
+C:\Users\HP\Desktop\LAST VERSION X_PRJ\x_prj_biblio\x_prj_biblio\x_prj_biblio\obj\Debug\x_prj_biblio.Ajouter_Bibliothecaire.resources
+C:\Users\HP\Desktop\LAST VERSION X_PRJ\x_prj_biblio\x_prj_biblio\x_prj_biblio\obj\Debug\x_prj_biblio.Edit_Delete_Book.resources
+C:\Users\HP\Desktop\LAST VERSION X_PRJ\x_prj_biblio\x_prj_biblio\x_prj_biblio\obj\Debug\x_prj_biblio.Gerer_Autor.resources
+C:\Users\HP\Desktop\LAST VERSION X_PRJ\x_prj_biblio\x_prj_biblio\x_prj_biblio\obj\Debug\x_prj_biblio.Gerer_Bibliothecaire.resources
+C:\Users\HP\Desktop\LAST VERSION X_PRJ\x_prj_biblio\x_prj_biblio\x_prj_biblio\obj\Debug\x_prj_biblio.Fconnexion.resources
+C:\Users\HP\Desktop\LAST VERSION X_PRJ\x_prj_biblio\x_prj_biblio\x_prj_biblio\obj\Debug\x_prj_biblio.Gerer_Borrowing.resources
+C:\Users\HP\Desktop\LAST VERSION X_PRJ\x_prj_biblio\x_prj_biblio\x_prj_biblio\obj\Debug\x_prj_biblio.Manage_Books.resources
+C:\Users\HP\Desktop\LAST VERSION X_PRJ\x_prj_biblio\x_prj_biblio\x_prj_biblio\obj\Debug\x_prj_biblio.Properties.Resources.resources
+C:\Users\HP\Desktop\LAST VERSION X_PRJ\x_prj_biblio\x_prj_biblio\x_prj_biblio\obj\Debug\x_prj_biblio.Supprimer_Autor.resources
+C:\Users\HP\Desktop\LAST VERSION X_PRJ\x_prj_biblio\x_prj_biblio\x_prj_biblio\obj\Debug\x_prj_biblio.User.resources
+C:\Users\HP\Desktop\LAST VERSION X_PRJ\x_prj_biblio\x_prj_biblio\x_prj_biblio\obj\Debug\x_prj_biblio.csproj.GenerateResource.cache
+C:\Users\HP\Desktop\LAST VERSION X_PRJ\x_prj_biblio\x_prj_biblio\x_prj_biblio\obj\Debug\x_prj_biblio.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\LAST VERSION X_PRJ\x_prj_biblio\x_prj_biblio\x_prj_biblio\obj\Debug\x_prj_biblio.exe
+C:\Users\HP\Desktop\LAST VERSION X_PRJ\x_prj_biblio\x_prj_biblio\x_prj_biblio\obj\Debug\x_prj_biblio.pdb
+C:\Users\HP\Desktop\LAST VERSION X_PRJ\x_prj_biblio\x_prj_biblio\x_prj_biblio\obj\Debug\x_prj_biblio.Modifier_Supprimer_BORROWING.resources
+C:\Users\Aninoss\Desktop\x_prj_biblio\x_prj_biblio\x_prj_biblio\bin\Debug\x_prj_biblio.exe.config
+C:\Users\Aninoss\Desktop\x_prj_biblio\x_prj_biblio\x_prj_biblio\obj\Debug\x_prj_biblio.exe
+C:\Users\Aninoss\Desktop\x_prj_biblio\x_prj_biblio\x_prj_biblio\obj\Debug\x_prj_biblio.pdb
+C:\Users\Aninoss\Desktop\x_prj_biblio\x_prj_biblio\x_prj_biblio\bin\Debug\x_prj_biblio.exe
+C:\Users\Aninoss\Desktop\x_prj_biblio\x_prj_biblio\x_prj_biblio\bin\Debug\x_prj_biblio.pdb
+C:\Users\Aninoss\Desktop\x_prj_biblio\x_prj_biblio\x_prj_biblio\obj\Debug\x_prj_biblio.csprojResolveAssemblyReference.cache
+C:\Users\Aninoss\Desktop\x_prj_biblio\x_prj_biblio\x_prj_biblio\obj\Debug\x_prj_biblio.Add_Book.resources
+C:\Users\Aninoss\Desktop\x_prj_biblio\x_prj_biblio\x_prj_biblio\obj\Debug\x_prj_biblio.Add_Borrowing.resources
+C:\Users\Aninoss\Desktop\x_prj_biblio\x_prj_biblio\x_prj_biblio\obj\Debug\x_prj_biblio.Admin.resources
+C:\Users\Aninoss\Desktop\x_prj_biblio\x_prj_biblio\x_prj_biblio\obj\Debug\x_prj_biblio.Ajouter_Autor.resources
+C:\Users\Aninoss\Desktop\x_prj_biblio\x_prj_biblio\x_prj_biblio\obj\Debug\x_prj_biblio.Ajouter_Bibliothecaire.resources
+C:\Users\Aninoss\Desktop\x_prj_biblio\x_prj_biblio\x_prj_biblio\obj\Debug\x_prj_biblio.Edit_Delete_Book.resources
+C:\Users\Aninoss\Desktop\x_prj_biblio\x_prj_biblio\x_prj_biblio\obj\Debug\x_prj_biblio.Gerer_Autor.resources
+C:\Users\Aninoss\Desktop\x_prj_biblio\x_prj_biblio\x_prj_biblio\obj\Debug\x_prj_biblio.Gerer_Bibliothecaire.resources
+C:\Users\Aninoss\Desktop\x_prj_biblio\x_prj_biblio\x_prj_biblio\obj\Debug\x_prj_biblio.Fconnexion.resources
+C:\Users\Aninoss\Desktop\x_prj_biblio\x_prj_biblio\x_prj_biblio\obj\Debug\x_prj_biblio.Gerer_Borrowing.resources
+C:\Users\Aninoss\Desktop\x_prj_biblio\x_prj_biblio\x_prj_biblio\obj\Debug\x_prj_biblio.Manage_Books.resources
+C:\Users\Aninoss\Desktop\x_prj_biblio\x_prj_biblio\x_prj_biblio\obj\Debug\x_prj_biblio.Modifier_Supprimer_BORROWING.resources
+C:\Users\Aninoss\Desktop\x_prj_biblio\x_prj_biblio\x_prj_biblio\obj\Debug\x_prj_biblio.Properties.Resources.resources
+C:\Users\Aninoss\Desktop\x_prj_biblio\x_prj_biblio\x_prj_biblio\obj\Debug\x_prj_biblio.Supprimer_Autor.resources
+C:\Users\Aninoss\Desktop\x_prj_biblio\x_prj_biblio\x_prj_biblio\obj\Debug\x_prj_biblio.User.resources
+C:\Users\Aninoss\Desktop\x_prj_biblio\x_prj_biblio\x_prj_biblio\obj\Debug\x_prj_biblio.csproj.GenerateResource.Cache
