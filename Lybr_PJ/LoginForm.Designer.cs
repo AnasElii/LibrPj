@@ -33,16 +33,18 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.label18 = new System.Windows.Forms.Label();
             this.pic_Ins = new System.Windows.Forms.PictureBox();
-            this.bt_Shide = new System.Windows.Forms.Button();
-            this.cb_Rme = new System.Windows.Forms.CheckBox();
-            this.tb_Pword = new System.Windows.Forms.TextBox();
-            this.tb_Uname = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.bt_Login = new System.Windows.Forms.Button();
             this.button_quitter = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.tb_Uname = new System.Windows.Forms.TextBox();
+            this.tb_Pword = new System.Windows.Forms.TextBox();
+            this.cb_Rme = new System.Windows.Forms.CheckBox();
+            this.bt_Shide = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic_Ins)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel2
@@ -86,73 +88,10 @@
             this.pic_Ins.TabIndex = 0;
             this.pic_Ins.TabStop = false;
             // 
-            // bt_Shide
-            // 
-            this.bt_Shide.BackColor = System.Drawing.Color.Transparent;
-            this.bt_Shide.FlatAppearance.BorderSize = 0;
-            this.bt_Shide.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_Shide.ForeColor = System.Drawing.Color.Transparent;
-            this.bt_Shide.Image = global::x_prj_biblio.Properties.Resources.eye;
-            this.bt_Shide.Location = new System.Drawing.Point(391, 75);
-            this.bt_Shide.Name = "bt_Shide";
-            this.bt_Shide.Size = new System.Drawing.Size(27, 20);
-            this.bt_Shide.TabIndex = 24;
-            this.bt_Shide.UseVisualStyleBackColor = false;
-            this.bt_Shide.Click += new System.EventHandler(this.bt_Shide_Click_1);
-            // 
-            // cb_Rme
-            // 
-            this.cb_Rme.AutoSize = true;
-            this.cb_Rme.Location = new System.Drawing.Point(258, 103);
-            this.cb_Rme.Name = "cb_Rme";
-            this.cb_Rme.Size = new System.Drawing.Size(95, 17);
-            this.cb_Rme.TabIndex = 3;
-            this.cb_Rme.Text = "Remember Me";
-            this.cb_Rme.UseVisualStyleBackColor = true;
-            // 
-            // tb_Pword
-            // 
-            this.tb_Pword.Location = new System.Drawing.Point(257, 75);
-            this.tb_Pword.Name = "tb_Pword";
-            this.tb_Pword.Size = new System.Drawing.Size(128, 20);
-            this.tb_Pword.TabIndex = 2;
-            this.tb_Pword.UseSystemPasswordChar = true;
-            this.tb_Pword.Click += new System.EventHandler(this.tb_Pword_Click);
-            this.tb_Pword.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tb_Pword_KeyDown);
-            // 
-            // tb_Uname
-            // 
-            this.tb_Uname.Location = new System.Drawing.Point(258, 36);
-            this.tb_Uname.Name = "tb_Uname";
-            this.tb_Uname.Size = new System.Drawing.Size(160, 20);
-            this.tb_Uname.TabIndex = 1;
-            this.tb_Uname.Click += new System.EventHandler(this.tb_Uname_Click);
-            this.tb_Uname.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tb_Uname_KeyDown);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(165, 78);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(86, 15);
-            this.label1.TabIndex = 20;
-            this.label1.Text = "Mot de passe :";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(165, 38);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(71, 15);
-            this.label3.TabIndex = 19;
-            this.label3.Text = "Utilisateur :";
-            // 
             // bt_Login
             // 
             this.bt_Login.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bt_Login.Location = new System.Drawing.Point(203, 141);
+            this.bt_Login.Location = new System.Drawing.Point(14, 133);
             this.bt_Login.Name = "bt_Login";
             this.bt_Login.Size = new System.Drawing.Size(100, 35);
             this.bt_Login.TabIndex = 4;
@@ -162,7 +101,7 @@
             // 
             // button_quitter
             // 
-            this.button_quitter.Location = new System.Drawing.Point(318, 141);
+            this.button_quitter.Location = new System.Drawing.Point(129, 133);
             this.button_quitter.Name = "button_quitter";
             this.button_quitter.Size = new System.Drawing.Size(100, 35);
             this.button_quitter.TabIndex = 5;
@@ -170,19 +109,91 @@
             this.button_quitter.UseVisualStyleBackColor = true;
             this.button_quitter.Click += new System.EventHandler(this.button_quitter_Click_1);
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(28, 10);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(39, 15);
+            this.label3.TabIndex = 19;
+            this.label3.Text = "User :";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(28, 57);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(86, 15);
+            this.label1.TabIndex = 20;
+            this.label1.Text = "Mot de passe :";
+            // 
+            // tb_Uname
+            // 
+            this.tb_Uname.Location = new System.Drawing.Point(31, 28);
+            this.tb_Uname.Name = "tb_Uname";
+            this.tb_Uname.Size = new System.Drawing.Size(160, 20);
+            this.tb_Uname.TabIndex = 1;
+            this.tb_Uname.Click += new System.EventHandler(this.tb_Uname_Click);
+            this.tb_Uname.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tb_Uname_KeyDown);
+            // 
+            // tb_Pword
+            // 
+            this.tb_Pword.Location = new System.Drawing.Point(31, 75);
+            this.tb_Pword.Name = "tb_Pword";
+            this.tb_Pword.Size = new System.Drawing.Size(127, 20);
+            this.tb_Pword.TabIndex = 2;
+            this.tb_Pword.UseSystemPasswordChar = true;
+            this.tb_Pword.Click += new System.EventHandler(this.tb_Pword_Click);
+            this.tb_Pword.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tb_Pword_KeyDown);
+            // 
+            // cb_Rme
+            // 
+            this.cb_Rme.AutoSize = true;
+            this.cb_Rme.Location = new System.Drawing.Point(31, 101);
+            this.cb_Rme.Name = "cb_Rme";
+            this.cb_Rme.Size = new System.Drawing.Size(95, 17);
+            this.cb_Rme.TabIndex = 3;
+            this.cb_Rme.Text = "Remember Me";
+            this.cb_Rme.UseVisualStyleBackColor = true;
+            // 
+            // bt_Shide
+            // 
+            this.bt_Shide.BackColor = System.Drawing.Color.Transparent;
+            this.bt_Shide.FlatAppearance.BorderSize = 0;
+            this.bt_Shide.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_Shide.ForeColor = System.Drawing.Color.Transparent;
+            this.bt_Shide.Image = global::x_prj_biblio.Properties.Resources.eye;
+            this.bt_Shide.Location = new System.Drawing.Point(164, 75);
+            this.bt_Shide.Name = "bt_Shide";
+            this.bt_Shide.Size = new System.Drawing.Size(27, 20);
+            this.bt_Shide.TabIndex = 24;
+            this.bt_Shide.UseVisualStyleBackColor = false;
+            this.bt_Shide.Click += new System.EventHandler(this.bt_Shide_Click_1);
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.Controls.Add(this.bt_Shide);
+            this.panel1.Controls.Add(this.cb_Rme);
+            this.panel1.Controls.Add(this.tb_Pword);
+            this.panel1.Controls.Add(this.tb_Uname);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.bt_Login);
+            this.panel1.Controls.Add(this.button_quitter);
+            this.panel1.Location = new System.Drawing.Point(159, 16);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(268, 176);
+            this.panel1.TabIndex = 25;
+            // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(439, 202);
-            this.Controls.Add(this.bt_Shide);
-            this.Controls.Add(this.cb_Rme);
-            this.Controls.Add(this.tb_Pword);
-            this.Controls.Add(this.tb_Uname);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.bt_Login);
-            this.Controls.Add(this.button_quitter);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -193,8 +204,9 @@
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic_Ins)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -204,14 +216,15 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.PictureBox pic_Ins;
-        private System.Windows.Forms.Button bt_Shide;
-        private System.Windows.Forms.CheckBox cb_Rme;
-        private System.Windows.Forms.TextBox tb_Pword;
-        private System.Windows.Forms.TextBox tb_Uname;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button bt_Login;
         private System.Windows.Forms.Button button_quitter;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox tb_Uname;
+        private System.Windows.Forms.TextBox tb_Pword;
+        private System.Windows.Forms.CheckBox cb_Rme;
+        private System.Windows.Forms.Button bt_Shide;
+        private System.Windows.Forms.Panel panel1;
     }
 }
 

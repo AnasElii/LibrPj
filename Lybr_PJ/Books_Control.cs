@@ -12,6 +12,10 @@ namespace x_prj_biblio
 {
     public partial class Books_Control : UserControl
     {
+        DataTable dataTable;
+
+        private Connexion c;
+
         public Books_Control()
         {
             InitializeComponent();
@@ -19,8 +23,13 @@ namespace x_prj_biblio
 
         private void Books_Control_Load(object sender, EventArgs e)
         {
+            c = new Connexion();
+                        
             tb_Search.Text = "Book title";
             tb_Search.ForeColor = Color.Gray;
+
+            dataTable = c.showDataTable(string.Format(@"Select * FROM dbo.Book"));
+            DG_book.DataSource = dataTable;
 
         }
 

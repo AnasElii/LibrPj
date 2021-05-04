@@ -95,7 +95,7 @@ namespace x_prj_biblio
 
             string str = _cmd.ExecuteScalar().ToString();
 
-            Con.Close();
+            _con.Close();
 
             return str;
         }

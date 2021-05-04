@@ -17,9 +17,11 @@ namespace x_prj_biblio
         StreamWriter streamWriter;
         StreamReader streamReader;
         private List<string> infList;
+        DataTable dataTable;
 
         private Connexion c;
         private Login l;
+        private Person p;
         private Dashboard d;
 
         public LoginForm()
@@ -93,7 +95,9 @@ namespace x_prj_biblio
 
         private void bt_Login_Click(object sender, EventArgs e)
         {
+            p = new Person();
             l = new Login();
+            c = new Connexion();
 
             l.Email = tb_Uname.Text;
             l.PassWord = tb_Pword.Text;
@@ -103,6 +107,10 @@ namespace x_prj_biblio
 
             if (messag.Equals("50500##Connected"))
             {
+                dataTable = c.showDataTable(string.Format(@"SELECT [per_id],[image_id] FROM dbo.Person  WHERE email = '{0}'", tb_Uname.Text));
+                p.ID = dataTable.Rows[0]["per_id"].ToString();
+                p.Image_Id = dataTable.Rows[0]["image_id"].ToString();
+
                 if (cb_Rme.Checked)
                 {
                     saveInfo();                    

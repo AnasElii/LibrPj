@@ -31,7 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.label18 = new System.Windows.Forms.Label();
+            this.lb_Uname = new System.Windows.Forms.Label();
+            this.pic_user = new System.Windows.Forms.PictureBox();
             this.tb_Person = new System.Windows.Forms.Button();
             this.bt_Borrow = new System.Windows.Forms.Button();
             this.bt_Writer = new System.Windows.Forms.Button();
@@ -39,6 +40,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.Side_panel = new System.Windows.Forms.Panel();
+            this.pic_logo = new System.Windows.Forms.PictureBox();
             this.bt_Dboard = new System.Windows.Forms.Button();
             this.lb_dateTime = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
@@ -46,35 +48,33 @@
             this.label15 = new System.Windows.Forms.Label();
             this.panel15 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panel11 = new System.Windows.Forms.Panel();
             this.label17 = new System.Windows.Forms.Label();
             this.panel13 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.panel14 = new System.Windows.Forms.Panel();
             this.label16 = new System.Windows.Forms.Label();
             this.panel16 = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
             this.Writers = new System.Windows.Forms.Label();
             this.panel17 = new System.Windows.Forms.Panel();
             this.label14 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             this.panel18 = new System.Windows.Forms.Panel();
             this.label13 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.label9 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.label11 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label5 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.bt_Notif = new System.Windows.Forms.Button();
             this.bt_Exit = new System.Windows.Forms.Button();
             this.bt_Sitt = new System.Windows.Forms.Button();
-            this.pic_user = new System.Windows.Forms.PictureBox();
-            this.pic_logo = new System.Windows.Forms.PictureBox();
             this.panel22 = new System.Windows.Forms.Panel();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -83,7 +83,9 @@
             this.books_Control1 = new x_prj_biblio.Books_Control();
             this.dashbord_Control1 = new x_prj_biblio.Dashbord_Control();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_user)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_logo)).BeginInit();
             this.panel12.SuspendLayout();
             this.panel11.SuspendLayout();
             this.panel14.SuspendLayout();
@@ -92,8 +94,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pic_user)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pic_logo)).BeginInit();
             this.panel22.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -109,23 +109,33 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(60)))), ((int)(((byte)(56)))));
-            this.panel3.Controls.Add(this.label18);
+            this.panel3.Controls.Add(this.lb_Uname);
             this.panel3.Controls.Add(this.pic_user);
             this.panel3.Location = new System.Drawing.Point(1187, 0);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(141, 143);
             this.panel3.TabIndex = 2;
             // 
-            // label18
+            // lb_Uname
             // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label18.ForeColor = System.Drawing.Color.White;
-            this.label18.Location = new System.Drawing.Point(27, 112);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(84, 17);
-            this.label18.TabIndex = 7;
-            this.label18.Text = "Aninoss Pro";
+            this.lb_Uname.AutoSize = true;
+            this.lb_Uname.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lb_Uname.ForeColor = System.Drawing.Color.White;
+            this.lb_Uname.Location = new System.Drawing.Point(27, 112);
+            this.lb_Uname.Name = "lb_Uname";
+            this.lb_Uname.Size = new System.Drawing.Size(84, 17);
+            this.lb_Uname.TabIndex = 7;
+            this.lb_Uname.Text = "Aninoss Pro";
+            // 
+            // pic_user
+            // 
+            this.pic_user.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pic_user.Location = new System.Drawing.Point(21, 16);
+            this.pic_user.Name = "pic_user";
+            this.pic_user.Size = new System.Drawing.Size(100, 88);
+            this.pic_user.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pic_user.TabIndex = 0;
+            this.pic_user.TabStop = false;
             // 
             // tb_Person
             // 
@@ -216,6 +226,14 @@
             this.Side_panel.Size = new System.Drawing.Size(13, 48);
             this.Side_panel.TabIndex = 7;
             // 
+            // pic_logo
+            // 
+            this.pic_logo.Location = new System.Drawing.Point(30, 16);
+            this.pic_logo.Name = "pic_logo";
+            this.pic_logo.Size = new System.Drawing.Size(100, 75);
+            this.pic_logo.TabIndex = 5;
+            this.pic_logo.TabStop = false;
+            // 
             // bt_Dboard
             // 
             this.bt_Dboard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(60)))), ((int)(((byte)(56)))));
@@ -291,6 +309,18 @@
             this.label10.TabIndex = 11;
             this.label10.Text = "15";
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Image = global::x_prj_biblio.Properties.Resources.calendar_16px;
+            this.label2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label2.Location = new System.Drawing.Point(13, 88);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(83, 13);
+            this.label2.TabIndex = 10;
+            this.label2.Text = "      04/04/2021";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -340,6 +370,17 @@
             this.label4.Size = new System.Drawing.Size(19, 13);
             this.label4.TabIndex = 11;
             this.label4.Text = "25";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Image = global::x_prj_biblio.Properties.Resources.calendar_16px;
+            this.label5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label5.Location = new System.Drawing.Point(13, 88);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(83, 13);
+            this.label5.TabIndex = 10;
+            this.label5.Text = "      04/04/2021";
             // 
             // label7
             // 
@@ -391,6 +432,17 @@
             this.label8.TabIndex = 11;
             this.label8.Text = "15";
             // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Image = global::x_prj_biblio.Properties.Resources.calendar_16px;
+            this.label11.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label11.Location = new System.Drawing.Point(13, 88);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(83, 13);
+            this.label11.TabIndex = 10;
+            this.label11.Text = "      04/04/2021";
+            // 
             // Writers
             // 
             this.Writers.AutoSize = true;
@@ -433,6 +485,17 @@
             this.label6.TabIndex = 11;
             this.label6.Text = "15";
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Image = global::x_prj_biblio.Properties.Resources.calendar_16px;
+            this.label9.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label9.Location = new System.Drawing.Point(13, 88);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(83, 13);
+            this.label9.TabIndex = 10;
+            this.label9.Text = "      04/04/2021";
+            // 
             // panel18
             // 
             this.panel18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(245)))), ((int)(((byte)(248)))));
@@ -461,17 +524,6 @@
             this.pictureBox4.TabIndex = 22;
             this.pictureBox4.TabStop = false;
             // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Image = global::x_prj_biblio.Properties.Resources.calendar_16px;
-            this.label9.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label9.Location = new System.Drawing.Point(13, 88);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(83, 13);
-            this.label9.TabIndex = 10;
-            this.label9.Text = "      04/04/2021";
-            // 
             // pictureBox3
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(220)))), ((int)(((byte)(255)))));
@@ -482,17 +534,6 @@
             this.pictureBox3.Size = new System.Drawing.Size(85, 78);
             this.pictureBox3.TabIndex = 20;
             this.pictureBox3.TabStop = false;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Image = global::x_prj_biblio.Properties.Resources.calendar_16px;
-            this.label11.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label11.Location = new System.Drawing.Point(13, 88);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(83, 13);
-            this.label11.TabIndex = 10;
-            this.label11.Text = "      04/04/2021";
             // 
             // pictureBox1
             // 
@@ -505,17 +546,6 @@
             this.pictureBox1.TabIndex = 18;
             this.pictureBox1.TabStop = false;
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Image = global::x_prj_biblio.Properties.Resources.calendar_16px;
-            this.label5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label5.Location = new System.Drawing.Point(13, 88);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(83, 13);
-            this.label5.TabIndex = 10;
-            this.label5.Text = "      04/04/2021";
-            // 
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
@@ -526,18 +556,6 @@
             this.pictureBox2.Size = new System.Drawing.Size(85, 78);
             this.pictureBox2.TabIndex = 16;
             this.pictureBox2.TabStop = false;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Image = global::x_prj_biblio.Properties.Resources.calendar_16px;
-            this.label2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label2.Location = new System.Drawing.Point(13, 88);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(83, 13);
-            this.label2.TabIndex = 10;
-            this.label2.Text = "      04/04/2021";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // bt_Notif
             // 
@@ -582,25 +600,6 @@
             this.bt_Sitt.Size = new System.Drawing.Size(45, 43);
             this.bt_Sitt.TabIndex = 4;
             this.bt_Sitt.UseVisualStyleBackColor = false;
-            // 
-            // pic_user
-            // 
-            this.pic_user.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pic_user.Image = ((System.Drawing.Image)(resources.GetObject("pic_user.Image")));
-            this.pic_user.Location = new System.Drawing.Point(21, 16);
-            this.pic_user.Name = "pic_user";
-            this.pic_user.Size = new System.Drawing.Size(100, 88);
-            this.pic_user.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pic_user.TabIndex = 0;
-            this.pic_user.TabStop = false;
-            // 
-            // pic_logo
-            // 
-            this.pic_logo.Location = new System.Drawing.Point(30, 16);
-            this.pic_logo.Name = "pic_logo";
-            this.pic_logo.Size = new System.Drawing.Size(100, 75);
-            this.pic_logo.TabIndex = 5;
-            this.pic_logo.TabStop = false;
             // 
             // panel22
             // 
@@ -712,8 +711,10 @@
             this.Load += new System.EventHandler(this.Dashboard_Load);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_user)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_logo)).EndInit();
             this.panel12.ResumeLayout(false);
             this.panel12.PerformLayout();
             this.panel11.ResumeLayout(false);
@@ -726,8 +727,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pic_user)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pic_logo)).EndInit();
             this.panel22.ResumeLayout(false);
             this.panel22.PerformLayout();
             this.ResumeLayout(false);
@@ -781,7 +780,7 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Panel panel16;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label lb_Uname;
         private System.Windows.Forms.Panel panel22;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
