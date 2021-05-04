@@ -34,12 +34,12 @@
             this.label18 = new System.Windows.Forms.Label();
             this.pic_Ins = new System.Windows.Forms.PictureBox();
             this.bt_Shide = new System.Windows.Forms.Button();
-            this.checkBox_AfficherCaracters = new System.Windows.Forms.CheckBox();
+            this.cb_Rme = new System.Windows.Forms.CheckBox();
             this.tb_Pword = new System.Windows.Forms.TextBox();
             this.tb_Uname = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.button_connecter = new System.Windows.Forms.Button();
+            this.bt_Login = new System.Windows.Forms.Button();
             this.button_quitter = new System.Windows.Forms.Button();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic_Ins)).BeginInit();
@@ -100,30 +100,34 @@
             this.bt_Shide.UseVisualStyleBackColor = false;
             this.bt_Shide.Click += new System.EventHandler(this.bt_Shide_Click_1);
             // 
-            // checkBox_AfficherCaracters
+            // cb_Rme
             // 
-            this.checkBox_AfficherCaracters.AutoSize = true;
-            this.checkBox_AfficherCaracters.Location = new System.Drawing.Point(258, 103);
-            this.checkBox_AfficherCaracters.Name = "checkBox_AfficherCaracters";
-            this.checkBox_AfficherCaracters.Size = new System.Drawing.Size(95, 17);
-            this.checkBox_AfficherCaracters.TabIndex = 23;
-            this.checkBox_AfficherCaracters.Text = "Remember Me";
-            this.checkBox_AfficherCaracters.UseVisualStyleBackColor = true;
+            this.cb_Rme.AutoSize = true;
+            this.cb_Rme.Location = new System.Drawing.Point(258, 103);
+            this.cb_Rme.Name = "cb_Rme";
+            this.cb_Rme.Size = new System.Drawing.Size(95, 17);
+            this.cb_Rme.TabIndex = 3;
+            this.cb_Rme.Text = "Remember Me";
+            this.cb_Rme.UseVisualStyleBackColor = true;
             // 
             // tb_Pword
             // 
             this.tb_Pword.Location = new System.Drawing.Point(257, 75);
             this.tb_Pword.Name = "tb_Pword";
-            this.tb_Pword.Size = new System.Drawing.Size(161, 20);
-            this.tb_Pword.TabIndex = 22;
+            this.tb_Pword.Size = new System.Drawing.Size(128, 20);
+            this.tb_Pword.TabIndex = 2;
             this.tb_Pword.UseSystemPasswordChar = true;
+            this.tb_Pword.Click += new System.EventHandler(this.tb_Pword_Click);
+            this.tb_Pword.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tb_Pword_KeyDown);
             // 
             // tb_Uname
             // 
             this.tb_Uname.Location = new System.Drawing.Point(258, 36);
             this.tb_Uname.Name = "tb_Uname";
             this.tb_Uname.Size = new System.Drawing.Size(160, 20);
-            this.tb_Uname.TabIndex = 21;
+            this.tb_Uname.TabIndex = 1;
+            this.tb_Uname.Click += new System.EventHandler(this.tb_Uname_Click);
+            this.tb_Uname.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tb_Uname_KeyDown);
             // 
             // label1
             // 
@@ -145,23 +149,23 @@
             this.label3.TabIndex = 19;
             this.label3.Text = "Utilisateur :";
             // 
-            // button_connecter
+            // bt_Login
             // 
-            this.button_connecter.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_connecter.Location = new System.Drawing.Point(203, 141);
-            this.button_connecter.Name = "button_connecter";
-            this.button_connecter.Size = new System.Drawing.Size(100, 35);
-            this.button_connecter.TabIndex = 18;
-            this.button_connecter.Text = "Connecter";
-            this.button_connecter.UseVisualStyleBackColor = true;
-            this.button_connecter.Click += new System.EventHandler(this.button_connecter_Click_1);
+            this.bt_Login.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bt_Login.Location = new System.Drawing.Point(203, 141);
+            this.bt_Login.Name = "bt_Login";
+            this.bt_Login.Size = new System.Drawing.Size(100, 35);
+            this.bt_Login.TabIndex = 4;
+            this.bt_Login.Text = "Connecter";
+            this.bt_Login.UseVisualStyleBackColor = true;
+            this.bt_Login.Click += new System.EventHandler(this.bt_Login_Click);
             // 
             // button_quitter
             // 
             this.button_quitter.Location = new System.Drawing.Point(318, 141);
             this.button_quitter.Name = "button_quitter";
             this.button_quitter.Size = new System.Drawing.Size(100, 35);
-            this.button_quitter.TabIndex = 17;
+            this.button_quitter.TabIndex = 5;
             this.button_quitter.Text = "Quitter";
             this.button_quitter.UseVisualStyleBackColor = true;
             this.button_quitter.Click += new System.EventHandler(this.button_quitter_Click_1);
@@ -172,12 +176,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(439, 202);
             this.Controls.Add(this.bt_Shide);
-            this.Controls.Add(this.checkBox_AfficherCaracters);
+            this.Controls.Add(this.cb_Rme);
             this.Controls.Add(this.tb_Pword);
             this.Controls.Add(this.tb_Uname);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.button_connecter);
+            this.Controls.Add(this.bt_Login);
             this.Controls.Add(this.button_quitter);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
@@ -201,12 +205,12 @@
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.PictureBox pic_Ins;
         private System.Windows.Forms.Button bt_Shide;
-        private System.Windows.Forms.CheckBox checkBox_AfficherCaracters;
+        private System.Windows.Forms.CheckBox cb_Rme;
         private System.Windows.Forms.TextBox tb_Pword;
         private System.Windows.Forms.TextBox tb_Uname;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button_connecter;
+        private System.Windows.Forms.Button bt_Login;
         private System.Windows.Forms.Button button_quitter;
     }
 }

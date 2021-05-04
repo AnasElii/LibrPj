@@ -139,7 +139,7 @@
             this.groupBox2.Controls.Add(this.button_connecter);
             this.groupBox2.Controls.Add(this.button_quitter);
             this.groupBox2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(29, 259);
+            this.groupBox2.Location = new System.Drawing.Point(25, 261);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(427, 199);
             this.groupBox2.TabIndex = 9;
@@ -242,7 +242,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(485, 716);
+            this.ClientSize = new System.Drawing.Size(485, 476);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
