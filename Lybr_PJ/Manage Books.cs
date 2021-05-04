@@ -25,14 +25,12 @@ namespace x_prj_biblio
 
         private void Delete_Book_Click(object sender, EventArgs e)
         {
-            Edit_Delete_Book edit_Delete_Book = new Edit_Delete_Book();
-            edit_Delete_Book.Show();
+            
         }
 
         private void Edit_Book_Click(object sender, EventArgs e)
         {
-            Edit_Delete_Book edit_Delete_Book = new Edit_Delete_Book();
-            edit_Delete_Book.Show();
+            
         }
 
         private void Add_Book_Click(object sender, EventArgs e)

@@ -42,8 +42,7 @@ namespace x_prj_biblio
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Modifier_Supprimer_BORROWING modifier_Supprimer_BORROWING = new Modifier_Supprimer_BORROWING();
-            modifier_Supprimer_BORROWING.Show();
+            
         }
 
         private void button6_Click(object sender, EventArgs e)

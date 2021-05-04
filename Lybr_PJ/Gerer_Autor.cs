@@ -41,7 +41,7 @@ namespace x_prj_biblio
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Ajouter_Autor Ajouter_Autor = new Ajouter_Autor();
+            Add_Autor Ajouter_Autor = new Add_Autor();
             Ajouter_Autor.Show();
         }
 
@@ -59,14 +59,12 @@ namespace x_prj_biblio
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Supprimer_Autor supprimer_Autor = new Supprimer_Autor();
-            supprimer_Autor.Show();
+            
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Supprimer_Autor supprimer_Autor = new Supprimer_Autor();
-            supprimer_Autor.Show();
+            
         }
 
         private void button8_Click(object sender, EventArgs e)

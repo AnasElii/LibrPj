@@ -16,7 +16,7 @@ namespace x_prj_biblio
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Fconnexion());
+            Application.Run(new Dashboard());
         }
     }
 }

@@ -62,7 +62,7 @@ namespace x_prj_biblio
         }
         public int ajout() //ajout
         {
-            return con.executer("insert into Bibliothecaire values('" + CodeBibl + "','" + NomBibl + "','" + PrenomBibl + "','" + AdresseBibl + "','" + TelephoneBibl + "','" + Utilisateur + "','" + MotDePass + "','" + Permission + "')");
+            return con.Add_Value("insert into Bibliothecaire values('" + CodeBibl + "','" + NomBibl + "','" + PrenomBibl + "','" + AdresseBibl + "','" + TelephoneBibl + "','" + Utilisateur + "','" + MotDePass + "','" + Permission + "')");
         }
     }
 }

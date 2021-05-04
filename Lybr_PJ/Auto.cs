@@ -30,12 +30,12 @@ namespace x_prj_biblio
         }
         public int ajout() //ajout
         {
-            return con.executer("insert into Autor (autor_name,birth_date) values('" + autor_name + "','" + birth_date + "')");
+            return con.Add_Value("insert into Autor (autor_name,birth_date) values('" + autor_name + "','" + birth_date + "')");
         }
 
         public void lister() //lister
         {
-            con.executer_liste_connecté("select * from Autor");
+            con.showDataTable("select * from Autor");
         }
     }
 }

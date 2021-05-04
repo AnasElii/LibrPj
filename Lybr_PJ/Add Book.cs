@@ -25,7 +25,7 @@ namespace x_prj_biblio
         private void But_Ok_Click(object sender, EventArgs e)
         {
             cnx.Open();
-            cmd = new SqlCommand("insert into Book(book_id,aut_id,book_editor,title,puge_number,book_quan,add_time,category) values('" + T1.Text + "','" + comboBox1.SelectedItem.ToString() + "','" + T3.Text + "','" + T4.Text + "','" + T5.Text + "','" + T6.Text + "','" + T7.Text +"','" + dateTimePicker1.Value.ToString("dd-MM-yyyy") + "')", cnx);
+            //cmd = new SqlCommand("insert into Book(book_id,aut_id,book_editor,title,puge_number,book_quan,add_time,category) values('" + T1.Text + "','" + comboBox1.SelectedItem.ToString() + "','" + T3.Text + "','" + T4.Text + "','" + T5.Text + "','" + T6.Text + "','" + T7.Text +"','" + dateTimePicker1.Value.ToString("dd-MM-yyyy") + "')", cnx);
             cmd.ExecuteNonQuery();
             cnx.Close();
             MessageBox.Show("Ajoute Avec Succe", "Ajouter Emprunt", MessageBoxButtons.OK, MessageBoxIcon.Information);

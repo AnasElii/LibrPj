@@ -33,6 +33,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -57,50 +58,60 @@
     <Compile Include="Add_Borrowing.Designer.cs">
       <DependentUpon>Add_Borrowing.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin.cs">
+    <Compile Include="Add_Autor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin.Designer.cs">
-      <DependentUpon>Admin.cs</DependentUpon>
+    <Compile Include="Add_Autor.Designer.cs">
+      <DependentUpon>Add_Autor.cs</DependentUpon>
     </Compile>
-    <Compile Include="Ajouter_Autor.cs">
+    <Compile Include="Autor.cs" />
+    <Compile Include="Bibliothecaire\Ajouter_Bibliothecaire.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Ajouter_Autor.Designer.cs">
-      <DependentUpon>Ajouter_Autor.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Ajouter_Bibliothecaire.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Ajouter_Bibliothecaire.Designer.cs">
+    <Compile Include="Bibliothecaire\Ajouter_Bibliothecaire.Designer.cs">
       <DependentUpon>Ajouter_Bibliothecaire.cs</DependentUpon>
     </Compile>
     <Compile Include="Auto.cs" />
     <Compile Include="Bibliothecaire.cs" />
+    <Compile Include="Books.cs" />
+    <Compile Include="Books_Control.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Books_Control.Designer.cs">
+      <DependentUpon>Books_Control.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Borrow.cs" />
     <Compile Include="Connexion.cs" />
-    <Compile Include="Edit Delete Book.cs">
+    <Compile Include="Dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Edit Delete Book.Designer.cs">
-      <DependentUpon>Edit Delete Book.cs</DependentUpon>
+    <Compile Include="Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="Dashbord_Control.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Dashbord_Control.Designer.cs">
+      <DependentUpon>Dashbord_Control.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Editor.cs" />
     <Compile Include="Gerer_Autor.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Gerer_Autor.Designer.cs">
       <DependentUpon>Gerer_Autor.cs</DependentUpon>
     </Compile>
-    <Compile Include="Gerer_Bibliothecaire.cs">
+    <Compile Include="Bibliothecaire\Gerer_Bibliothecaire.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Gerer_Bibliothecaire.Designer.cs">
+    <Compile Include="Bibliothecaire\Gerer_Bibliothecaire.Designer.cs">
       <DependentUpon>Gerer_Bibliothecaire.cs</DependentUpon>
     </Compile>
-    <Compile Include="Fconnexion.cs">
+    <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Fconnexion.Designer.cs">
-      <DependentUpon>Fconnexion.cs</DependentUpon>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Gerer_Borrowing.cs">
       <SubType>Form</SubType>
@@ -114,12 +125,7 @@
     <Compile Include="Manage Books.Designer.cs">
       <DependentUpon>Manage Books.cs</DependentUpon>
     </Compile>
-    <Compile Include="Modifier_Supprimer_BORROWING.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Modifier_Supprimer_BORROWING.Designer.cs">
-      <DependentUpon>Modifier_Supprimer_BORROWING.cs</DependentUpon>
-    </Compile>
+    <Compile Include="Person.cs" />
     <Compile Include="prj_biblioDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -127,53 +133,42 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Supprimer_Autor.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Supprimer_Autor.Designer.cs">
-      <DependentUpon>Supprimer_Autor.cs</DependentUpon>
-    </Compile>
-    <Compile Include="User.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="User.Designer.cs">
-      <DependentUpon>User.cs</DependentUpon>
-    </Compile>
+    <Compile Include="Zon.cs" />
     <EmbeddedResource Include="Add Book.resx">
       <DependentUpon>Add Book.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Add_Borrowing.resx">
       <DependentUpon>Add_Borrowing.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin.resx">
-      <DependentUpon>Admin.cs</DependentUpon>
+    <EmbeddedResource Include="Add_Autor.resx">
+      <DependentUpon>Add_Autor.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Ajouter_Autor.resx">
-      <DependentUpon>Ajouter_Autor.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Ajouter_Bibliothecaire.resx">
+    <EmbeddedResource Include="Bibliothecaire\Ajouter_Bibliothecaire.resx">
       <DependentUpon>Ajouter_Bibliothecaire.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Edit Delete Book.resx">
-      <DependentUpon>Edit Delete Book.cs</DependentUpon>
+    <EmbeddedResource Include="Books_Control.resx">
+      <DependentUpon>Books_Control.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashbord_Control.resx">
+      <DependentUpon>Dashbord_Control.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Gerer_Autor.resx">
       <DependentUpon>Gerer_Autor.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Gerer_Bibliothecaire.resx">
+    <EmbeddedResource Include="Bibliothecaire\Gerer_Bibliothecaire.resx">
       <DependentUpon>Gerer_Bibliothecaire.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Fconnexion.resx">
-      <DependentUpon>Fconnexion.cs</DependentUpon>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Gerer_Borrowing.resx">
       <DependentUpon>Gerer_Borrowing.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Manage Books.resx">
       <DependentUpon>Manage Books.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Modifier_Supprimer_BORROWING.resx">
-      <DependentUpon>Modifier_Supprimer_BORROWING.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -183,13 +178,8 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Supprimer_Autor.resx">
-      <DependentUpon>Supprimer_Autor.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="User.resx">
-      <DependentUpon>User.cs</DependentUpon>
-    </EmbeddedResource>
     <None Include="prj_biblioDataSet.xsc">
       <DependentUpon>prj_biblioDataSet.xsd</DependentUpon>
     </None>
@@ -217,5 +207,66 @@
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eye.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\toppng.com-dashboard-svg-icon-free-dashboard-icon-981x823.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\notification_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\notification_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sign_out_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar_16px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\facebook_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\facebook_16px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\whatsapp_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\instagram_80px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\instagram_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\instagram_80px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\facebook_16px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\facebook_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\instagram_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\instagram_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\instagram_24px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\instagram_old_80px.png" />
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

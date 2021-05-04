@@ -10,50 +10,94 @@ namespace x_prj_biblio
 {
     public class Connexion
     {
-        private SqlConnection con;
-        private SqlCommand cmd;
-        public DataTable dt;
-        public SqlDataReader dr;
-        public Boolean Connecter()
+        private static SqlConnection _con;
+        private SqlCommand _cmd;
+        private DataTable _dataTable;
+        private SqlDataAdapter _dataAdapter;
+
+        string ch;
+
+        public SqlConnection Con
         {
-            try
+            get
             {
-                string ch = "Data Source=SQL5104.site4now.net;Initial Catalog=db_a736ef_01;User Id=db_a736ef_01_admin;Password=dbo_01_1996";
-                con = new SqlConnection(ch);
-                con.Open();
-                return true;
-            }
-            catch
-            {
-                return false;
+                return _con;
             }
         }
-        public void Deconnecter()
+
+        public Connexion()
         {
-            con.Close();
+            ch = "Data Source=SQL5104.site4now.net;Initial Catalog=db_a736ef_01;User Id=db_a736ef_01_admin;Password=dbo_01_1996";
+            _con = new SqlConnection(ch);
         }
-        public int executer(String chaine_sql)
+
+        ////////////// ----- Show table ----- /////////////
+        public DataTable showDataTable(string Sqlcommand)
         {
-            cmd = new SqlCommand();
-            cmd.Connection = con;
-            cmd.CommandText = chaine_sql;
-            return cmd.ExecuteNonQuery();
+            _con.Open();
+
+            _cmd = new SqlCommand(Sqlcommand, _con);
+
+            _dataTable = new DataTable();
+            _cmd.ExecuteNonQuery();
+
+            _dataAdapter = new SqlDataAdapter(_cmd);
+            _dataAdapter.Fill(_dataTable);
+
+            _con.Close();
+            
+            return _dataTable;
         }
-        public void executer_liste_connecté(String chaine_sql)
-        {
-            cmd = new SqlCommand();
-            cmd.Connection = con;
-            cmd.CommandText = chaine_sql;
-            dr = cmd.ExecuteReader();
-            dt = new DataTable();
-            dt.Load(dr);
+
+        ////////////// ----- Show table Using Proc ID ----- //////////////
+        public DataTable showParamDataTable(string Sqlcommand, string idName)
+        {          
+
+            _con.Open();
+
+            SqlCommand _cmd = new SqlCommand(Sqlcommand, _con);
+            _cmd.CommandType = CommandType.StoredProcedure;
+
+            _cmd.Parameters.Add(idName, SqlDbType.UniqueIdentifier);
+
+            _cmd.Parameters[idName].Value = Guid.Parse("");
+
+            _dataTable = new DataTable();
+            _cmd.ExecuteNonQuery();
+
+            _dataAdapter = new SqlDataAdapter(_cmd);
+            _dataAdapter.Fill(_dataTable);
+
+            _con.Close();
+
+            return _dataTable;
         }
-        public String executer_valeur(String chaine_sql)
+
+        public int Add_Value(String sqlstring)
         {
-            cmd = new SqlCommand();
-            cmd.Connection = con;
-            cmd.CommandText = chaine_sql;
-            return cmd.ExecuteScalar().ToString();
+            _con.Open();
+
+            _cmd = new SqlCommand(sqlstring,_con);            
+            int numb = _cmd.ExecuteNonQuery();
+
+            Con.Close();
+
+            return numb;
+        }
+
+        public String executer_valeur(String sqlstring)
+        {
+            _con.Open();
+
+            _cmd = new SqlCommand();
+            _cmd.Connection = _con;
+            _cmd.CommandText = sqlstring;
+
+            string str = _cmd.ExecuteScalar().ToString();
+
+            Con.Close();
+
+            return str;
         }
 
     }
