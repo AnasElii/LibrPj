@@ -46,4 +46,4 @@ namespace x_prj_biblio
         }
     }
 }
-}
+

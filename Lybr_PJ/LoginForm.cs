@@ -75,7 +75,19 @@ namespace x_prj_biblio
             Application.Exit();
         }
         
-        private void bt_Shide_Click(object sender, EventArgs e)
+        
+
+        private void button_quitter_Click_1(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void button_connecter_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bt_Shide_Click_1(object sender, EventArgs e)
         {
             if (tb_Pword.UseSystemPasswordChar)
             {

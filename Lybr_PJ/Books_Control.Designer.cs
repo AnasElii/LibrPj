@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Books_Control));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.bt_Cate = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -53,7 +53,7 @@
             // 
             this.groupBox2.Controls.Add(this.cb_Cate);
             this.groupBox2.Controls.Add(this.bt_Cate);
-            this.groupBox2.Location = new System.Drawing.Point(158, 43);
+            this.groupBox2.Location = new System.Drawing.Point(161, 27);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(365, 48);
             this.groupBox2.TabIndex = 48;
@@ -76,7 +76,7 @@
             // 
             this.groupBox1.Controls.Add(this.bt_Sear);
             this.groupBox1.Controls.Add(this.tb_Search);
-            this.groupBox1.Location = new System.Drawing.Point(529, 43);
+            this.groupBox1.Location = new System.Drawing.Point(532, 27);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(489, 48);
             this.groupBox1.TabIndex = 47;
@@ -108,9 +108,9 @@
             // 
             this.button7.Image = ((System.Drawing.Image)(resources.GetObject("button7.Image")));
             this.button7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button7.Location = new System.Drawing.Point(223, 437);
+            this.button7.Location = new System.Drawing.Point(257, 462);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(80, 30);
+            this.button7.Size = new System.Drawing.Size(97, 30);
             this.button7.TabIndex = 46;
             this.button7.Text = "Refresh";
             this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -119,33 +119,33 @@
             // dataGridView_Livre
             // 
             this.dataGridView_Livre.AllowUserToAddRows = false;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.dataGridView_Livre.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.dataGridView_Livre.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView_Livre.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView_Livre.BackgroundColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.ControlLightLight;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView_Livre.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.ControlLightLight;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView_Livre.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView_Livre.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView_Livre.Location = new System.Drawing.Point(158, 96);
+            this.dataGridView_Livre.Location = new System.Drawing.Point(161, 80);
             this.dataGridView_Livre.Name = "dataGridView_Livre";
             this.dataGridView_Livre.ReadOnly = true;
             this.dataGridView_Livre.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView_Livre.Size = new System.Drawing.Size(860, 318);
+            this.dataGridView_Livre.Size = new System.Drawing.Size(860, 362);
             this.dataGridView_Livre.TabIndex = 45;
             // 
             // button6
             // 
             this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
             this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button6.Location = new System.Drawing.Point(828, 437);
+            this.button6.Location = new System.Drawing.Point(791, 462);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 30);
+            this.button6.Size = new System.Drawing.Size(98, 30);
             this.button6.TabIndex = 44;
             this.button6.Text = "Cancel";
             this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -155,10 +155,10 @@
             // 
             this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
             this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(698, 437);
+            this.button4.Location = new System.Drawing.Point(685, 462);
             this.button4.Margin = new System.Windows.Forms.Padding(5);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(103, 30);
+            this.button4.Size = new System.Drawing.Size(98, 30);
             this.button4.TabIndex = 43;
             this.button4.Text = "Print Book";
             this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -168,10 +168,10 @@
             // 
             this.Delete_Book.Image = ((System.Drawing.Image)(resources.GetObject("Delete_Book.Image")));
             this.Delete_Book.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Delete_Book.Location = new System.Drawing.Point(566, 437);
+            this.Delete_Book.Location = new System.Drawing.Point(577, 462);
             this.Delete_Book.Margin = new System.Windows.Forms.Padding(5);
             this.Delete_Book.Name = "Delete_Book";
-            this.Delete_Book.Size = new System.Drawing.Size(108, 30);
+            this.Delete_Book.Size = new System.Drawing.Size(98, 30);
             this.Delete_Book.TabIndex = 42;
             this.Delete_Book.Text = "Delete Book";
             this.Delete_Book.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -181,7 +181,7 @@
             // 
             this.Edit_Book.Image = ((System.Drawing.Image)(resources.GetObject("Edit_Book.Image")));
             this.Edit_Book.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Edit_Book.Location = new System.Drawing.Point(446, 437);
+            this.Edit_Book.Location = new System.Drawing.Point(469, 462);
             this.Edit_Book.Margin = new System.Windows.Forms.Padding(5);
             this.Edit_Book.Name = "Edit_Book";
             this.Edit_Book.Size = new System.Drawing.Size(98, 30);
@@ -194,7 +194,7 @@
             // 
             this.Add_Book.Image = ((System.Drawing.Image)(resources.GetObject("Add_Book.Image")));
             this.Add_Book.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Add_Book.Location = new System.Drawing.Point(326, 437);
+            this.Add_Book.Location = new System.Drawing.Point(362, 462);
             this.Add_Book.Margin = new System.Windows.Forms.Padding(5);
             this.Add_Book.Name = "Add_Book";
             this.Add_Book.Size = new System.Drawing.Size(97, 30);
