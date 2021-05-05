@@ -19,7 +19,7 @@ namespace x_prj_biblio
         private List<string> infList;
         DataTable dataTable;
 
-        private Connexion c;
+        public static Connexion c;
         private Login l;
         private Person p;
         private Dashboard d;
@@ -107,9 +107,11 @@ namespace x_prj_biblio
 
             if (messag.Equals("50500##Connected"))
             {
+                this.Hide();
+
                 dataTable = c.showDataTable(string.Format(@"SELECT [per_id],[image_id] FROM dbo.Person  WHERE email = '{0}'", tb_Uname.Text));
                 p.ID = dataTable.Rows[0]["per_id"].ToString();
-                p.Image_Id = dataTable.Rows[0]["image_id"].ToString();
+                p.Image_Id = dataTable.Rows[0]["image_id"].ToString();                
 
                 if (cb_Rme.Checked)
                 {
@@ -117,6 +119,7 @@ namespace x_prj_biblio
                 }
                 d = new Dashboard();
                 d.Show();
+                
             }
             else if(messag.Equals("50404##user undifounded"))
             {

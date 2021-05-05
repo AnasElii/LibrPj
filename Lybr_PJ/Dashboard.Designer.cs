@@ -30,17 +30,20 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
             this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.Progile_inf_panel = new System.Windows.Forms.Panel();
             this.lb_Uname = new System.Windows.Forms.Label();
             this.pic_user = new System.Windows.Forms.PictureBox();
-            this.tb_Person = new System.Windows.Forms.Button();
-            this.bt_Borrow = new System.Windows.Forms.Button();
+            this.tb_Zon = new System.Windows.Forms.Button();
             this.bt_Writer = new System.Windows.Forms.Button();
             this.bt_Book = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.Side_panel = new System.Windows.Forms.Panel();
+            this.tb_Person = new System.Windows.Forms.Button();
+            this.bt_Category = new System.Windows.Forms.Button();
+            this.bt_Publisher = new System.Windows.Forms.Button();
+            this.Side_btn_col = new System.Windows.Forms.Panel();
             this.pic_logo = new System.Windows.Forms.PictureBox();
+            this.bt_Borrow = new System.Windows.Forms.Button();
             this.bt_Dboard = new System.Windows.Forms.Button();
             this.lb_dateTime = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
@@ -75,16 +78,21 @@
             this.bt_Notif = new System.Windows.Forms.Button();
             this.bt_Exit = new System.Windows.Forms.Button();
             this.bt_Sitt = new System.Windows.Forms.Button();
-            this.panel22 = new System.Windows.Forms.Panel();
+            this.Sub_infp_panel = new System.Windows.Forms.Panel();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.label21 = new System.Windows.Forms.Label();
-            this.books_Control1 = new x_prj_biblio.Books_Control();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.Persons = new System.Windows.Forms.Panel();
+            this.Book = new System.Windows.Forms.Panel();
+            this.Writer = new System.Windows.Forms.Panel();
+            this.Borrow = new System.Windows.Forms.Panel();
             this.dashbord_Control1 = new x_prj_biblio.Dashbord_Control();
-            this.panel3.SuspendLayout();
+            this.books_Control1 = new x_prj_biblio.Books_Control();
+            this.Progile_inf_panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic_user)).BeginInit();
-            this.panel1.SuspendLayout();
+            this.Side_panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic_logo)).BeginInit();
             this.panel12.SuspendLayout();
             this.panel11.SuspendLayout();
@@ -94,7 +102,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.panel22.SuspendLayout();
+            this.Sub_infp_panel.SuspendLayout();
+            this.panel4.SuspendLayout();
+            this.Persons.SuspendLayout();
+            this.Book.SuspendLayout();
+            this.Writer.SuspendLayout();
+            this.Borrow.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel2
@@ -106,15 +119,15 @@
             this.panel2.Size = new System.Drawing.Size(1189, 10);
             this.panel2.TabIndex = 0;
             // 
-            // panel3
+            // Progile_inf_panel
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(60)))), ((int)(((byte)(56)))));
-            this.panel3.Controls.Add(this.lb_Uname);
-            this.panel3.Controls.Add(this.pic_user);
-            this.panel3.Location = new System.Drawing.Point(1187, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(141, 143);
-            this.panel3.TabIndex = 2;
+            this.Progile_inf_panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(60)))), ((int)(((byte)(56)))));
+            this.Progile_inf_panel.Controls.Add(this.lb_Uname);
+            this.Progile_inf_panel.Controls.Add(this.pic_user);
+            this.Progile_inf_panel.Location = new System.Drawing.Point(1187, 0);
+            this.Progile_inf_panel.Name = "Progile_inf_panel";
+            this.Progile_inf_panel.Size = new System.Drawing.Size(141, 143);
+            this.Progile_inf_panel.TabIndex = 2;
             // 
             // lb_Uname
             // 
@@ -137,31 +150,18 @@
             this.pic_user.TabIndex = 0;
             this.pic_user.TabStop = false;
             // 
-            // tb_Person
+            // tb_Zon
             // 
-            this.tb_Person.FlatAppearance.BorderSize = 0;
-            this.tb_Person.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.tb_Person.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.tb_Person.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.tb_Person.Location = new System.Drawing.Point(12, 395);
-            this.tb_Person.Name = "tb_Person";
-            this.tb_Person.Size = new System.Drawing.Size(153, 48);
-            this.tb_Person.TabIndex = 1;
-            this.tb_Person.Text = "Person";
-            this.tb_Person.UseVisualStyleBackColor = true;
-            // 
-            // bt_Borrow
-            // 
-            this.bt_Borrow.FlatAppearance.BorderSize = 0;
-            this.bt_Borrow.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_Borrow.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.bt_Borrow.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.bt_Borrow.Location = new System.Drawing.Point(12, 333);
-            this.bt_Borrow.Name = "bt_Borrow";
-            this.bt_Borrow.Size = new System.Drawing.Size(153, 48);
-            this.bt_Borrow.TabIndex = 2;
-            this.bt_Borrow.Text = "Borrow";
-            this.bt_Borrow.UseVisualStyleBackColor = true;
+            this.tb_Zon.FlatAppearance.BorderSize = 0;
+            this.tb_Zon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.tb_Zon.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.tb_Zon.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.tb_Zon.Location = new System.Drawing.Point(12, 479);
+            this.tb_Zon.Name = "tb_Zon";
+            this.tb_Zon.Size = new System.Drawing.Size(153, 48);
+            this.tb_Zon.TabIndex = 1;
+            this.tb_Zon.Text = "Zon";
+            this.tb_Zon.UseVisualStyleBackColor = true;
             // 
             // bt_Writer
             // 
@@ -169,7 +169,7 @@
             this.bt_Writer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_Writer.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.bt_Writer.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.bt_Writer.Location = new System.Drawing.Point(12, 271);
+            this.bt_Writer.Location = new System.Drawing.Point(12, 317);
             this.bt_Writer.Name = "bt_Writer";
             this.bt_Writer.Size = new System.Drawing.Size(153, 48);
             this.bt_Writer.TabIndex = 3;
@@ -201,38 +201,95 @@
             this.label1.TabIndex = 6;
             this.label1.Text = "An Labrary";
             // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(43)))), ((int)(((byte)(64)))));
-            this.panel1.Controls.Add(this.Side_panel);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.pic_logo);
-            this.panel1.Controls.Add(this.bt_Book);
-            this.panel1.Controls.Add(this.bt_Writer);
-            this.panel1.Controls.Add(this.bt_Borrow);
-            this.panel1.Controls.Add(this.tb_Person);
-            this.panel1.Controls.Add(this.bt_Dboard);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(168, 863);
-            this.panel1.TabIndex = 0;
-            // 
             // Side_panel
             // 
-            this.Side_panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(152)))), ((int)(((byte)(0)))));
-            this.Side_panel.Location = new System.Drawing.Point(0, 147);
+            this.Side_panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(43)))), ((int)(((byte)(64)))));
+            this.Side_panel.Controls.Add(this.pic_logo);
+            this.Side_panel.Controls.Add(this.label1);
+            this.Side_panel.Controls.Add(this.Side_btn_col);
+            this.Side_panel.Controls.Add(this.bt_Dboard);
+            this.Side_panel.Controls.Add(this.bt_Book);
+            this.Side_panel.Controls.Add(this.bt_Borrow);
+            this.Side_panel.Controls.Add(this.bt_Writer);
+            this.Side_panel.Controls.Add(this.bt_Publisher);
+            this.Side_panel.Controls.Add(this.bt_Category);
+            this.Side_panel.Controls.Add(this.tb_Zon);
+            this.Side_panel.Controls.Add(this.tb_Person);
+            this.Side_panel.Dock = System.Windows.Forms.DockStyle.Left;
+            this.Side_panel.Location = new System.Drawing.Point(0, 0);
             this.Side_panel.Name = "Side_panel";
-            this.Side_panel.Size = new System.Drawing.Size(13, 48);
-            this.Side_panel.TabIndex = 7;
+            this.Side_panel.Size = new System.Drawing.Size(168, 863);
+            this.Side_panel.TabIndex = 0;
+            // 
+            // tb_Person
+            // 
+            this.tb_Person.FlatAppearance.BorderSize = 0;
+            this.tb_Person.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.tb_Person.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.tb_Person.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.tb_Person.Location = new System.Drawing.Point(12, 533);
+            this.tb_Person.Name = "tb_Person";
+            this.tb_Person.Size = new System.Drawing.Size(153, 48);
+            this.tb_Person.TabIndex = 10;
+            this.tb_Person.Text = "Person";
+            this.tb_Person.UseVisualStyleBackColor = true;
+            // 
+            // bt_Category
+            // 
+            this.bt_Category.FlatAppearance.BorderSize = 0;
+            this.bt_Category.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_Category.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.bt_Category.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.bt_Category.Location = new System.Drawing.Point(12, 425);
+            this.bt_Category.Name = "bt_Category";
+            this.bt_Category.Size = new System.Drawing.Size(153, 48);
+            this.bt_Category.TabIndex = 9;
+            this.bt_Category.Text = "Categoty";
+            this.bt_Category.UseVisualStyleBackColor = true;
+            // 
+            // bt_Publisher
+            // 
+            this.bt_Publisher.FlatAppearance.BorderSize = 0;
+            this.bt_Publisher.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_Publisher.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.bt_Publisher.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.bt_Publisher.Location = new System.Drawing.Point(12, 371);
+            this.bt_Publisher.Name = "bt_Publisher";
+            this.bt_Publisher.Size = new System.Drawing.Size(153, 48);
+            this.bt_Publisher.TabIndex = 8;
+            this.bt_Publisher.Text = "Publisher";
+            this.bt_Publisher.UseVisualStyleBackColor = true;
+            // 
+            // Side_btn_col
+            // 
+            this.Side_btn_col.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(152)))), ((int)(((byte)(0)))));
+            this.Side_btn_col.Location = new System.Drawing.Point(0, 147);
+            this.Side_btn_col.Name = "Side_btn_col";
+            this.Side_btn_col.Size = new System.Drawing.Size(13, 48);
+            this.Side_btn_col.TabIndex = 7;
             // 
             // pic_logo
             // 
+            this.pic_logo.Image = ((System.Drawing.Image)(resources.GetObject("pic_logo.Image")));
             this.pic_logo.Location = new System.Drawing.Point(30, 16);
             this.pic_logo.Name = "pic_logo";
-            this.pic_logo.Size = new System.Drawing.Size(100, 75);
+            this.pic_logo.Size = new System.Drawing.Size(100, 88);
+            this.pic_logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pic_logo.TabIndex = 5;
             this.pic_logo.TabStop = false;
+            // 
+            // bt_Borrow
+            // 
+            this.bt_Borrow.FlatAppearance.BorderSize = 0;
+            this.bt_Borrow.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_Borrow.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.bt_Borrow.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.bt_Borrow.Location = new System.Drawing.Point(12, 263);
+            this.bt_Borrow.Name = "bt_Borrow";
+            this.bt_Borrow.Size = new System.Drawing.Size(153, 48);
+            this.bt_Borrow.TabIndex = 2;
+            this.bt_Borrow.Text = "Borrow";
+            this.bt_Borrow.UseVisualStyleBackColor = true;
             // 
             // bt_Dboard
             // 
@@ -276,7 +333,7 @@
             this.panel12.Controls.Add(this.label10);
             this.panel12.Controls.Add(this.label2);
             this.panel12.Controls.Add(this.label3);
-            this.panel12.Location = new System.Drawing.Point(460, 117);
+            this.panel12.Location = new System.Drawing.Point(15, 35);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(180, 113);
             this.panel12.TabIndex = 4;
@@ -312,7 +369,6 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Image = global::x_prj_biblio.Properties.Resources.calendar_16px;
             this.label2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.label2.Location = new System.Drawing.Point(13, 88);
             this.label2.Name = "label2";
@@ -338,7 +394,7 @@
             this.panel11.Controls.Add(this.label4);
             this.panel11.Controls.Add(this.label5);
             this.panel11.Controls.Add(this.label7);
-            this.panel11.Location = new System.Drawing.Point(1000, 117);
+            this.panel11.Location = new System.Drawing.Point(14, 36);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(180, 113);
             this.panel11.TabIndex = 17;
@@ -374,7 +430,6 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Image = global::x_prj_biblio.Properties.Resources.calendar_16px;
             this.label5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.label5.Location = new System.Drawing.Point(13, 88);
             this.label5.Name = "label5";
@@ -399,7 +454,7 @@
             this.panel14.Controls.Add(this.label8);
             this.panel14.Controls.Add(this.label11);
             this.panel14.Controls.Add(this.Writers);
-            this.panel14.Location = new System.Drawing.Point(742, 121);
+            this.panel14.Location = new System.Drawing.Point(19, 39);
             this.panel14.Name = "panel14";
             this.panel14.Size = new System.Drawing.Size(180, 113);
             this.panel14.TabIndex = 19;
@@ -411,9 +466,9 @@
             this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(152)))), ((int)(((byte)(34)))), ((int)(((byte)(255)))));
             this.label16.Location = new System.Drawing.Point(13, 64);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(46, 13);
+            this.label16.Size = new System.Drawing.Size(41, 13);
             this.label16.TabIndex = 14;
-            this.label16.Text = "Person";
+            this.label16.Text = "Writer";
             // 
             // panel16
             // 
@@ -435,7 +490,6 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Image = global::x_prj_biblio.Properties.Resources.calendar_16px;
             this.label11.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.label11.Location = new System.Drawing.Point(13, 88);
             this.label11.Name = "label11";
@@ -460,7 +514,7 @@
             this.panel17.Controls.Add(this.label9);
             this.panel17.Controls.Add(this.panel18);
             this.panel17.Controls.Add(this.label13);
-            this.panel17.Location = new System.Drawing.Point(194, 117);
+            this.panel17.Location = new System.Drawing.Point(2, 30);
             this.panel17.Name = "panel17";
             this.panel17.Size = new System.Drawing.Size(180, 113);
             this.panel17.TabIndex = 21;
@@ -488,7 +542,6 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Image = global::x_prj_biblio.Properties.Resources.calendar_16px;
             this.label9.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.label9.Location = new System.Drawing.Point(13, 88);
             this.label9.Name = "label9";
@@ -516,44 +569,48 @@
             // pictureBox4
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(247)))), ((int)(((byte)(218)))));
-            this.pictureBox4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox4.BackgroundImage")));
             this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox4.Location = new System.Drawing.Point(210, 89);
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(18, 2);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(85, 78);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox4.TabIndex = 22;
             this.pictureBox4.TabStop = false;
             // 
             // pictureBox3
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(220)))), ((int)(((byte)(255)))));
-            this.pictureBox3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.BackgroundImage")));
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox3.Location = new System.Drawing.Point(758, 93);
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(35, 11);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(85, 78);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox3.TabIndex = 20;
             this.pictureBox3.TabStop = false;
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(231)))), ((int)(((byte)(221)))));
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(1016, 89);
+            this.pictureBox1.Image = global::x_prj_biblio.Properties.Resources.borrow_books_240px;
+            this.pictureBox1.Location = new System.Drawing.Point(30, 8);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(85, 78);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 18;
             this.pictureBox1.TabStop = false;
             // 
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
-            this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox2.Location = new System.Drawing.Point(476, 89);
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(31, 7);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(85, 78);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox2.TabIndex = 16;
             this.pictureBox2.TabStop = false;
             // 
@@ -564,7 +621,7 @@
             this.bt_Notif.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_Notif.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.bt_Notif.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.bt_Notif.Image = global::x_prj_biblio.Properties.Resources.notification_32px;
+            this.bt_Notif.Image = ((System.Drawing.Image)(resources.GetObject("bt_Notif.Image")));
             this.bt_Notif.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.bt_Notif.Location = new System.Drawing.Point(1016, 16);
             this.bt_Notif.Name = "bt_Notif";
@@ -579,7 +636,7 @@
             this.bt_Exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_Exit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.bt_Exit.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.bt_Exit.Image = global::x_prj_biblio.Properties.Resources.sign_out_24px;
+            this.bt_Exit.Image = ((System.Drawing.Image)(resources.GetObject("bt_Exit.Image")));
             this.bt_Exit.Location = new System.Drawing.Point(1136, 16);
             this.bt_Exit.Name = "bt_Exit";
             this.bt_Exit.Size = new System.Drawing.Size(45, 43);
@@ -594,24 +651,24 @@
             this.bt_Sitt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_Sitt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.bt_Sitt.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.bt_Sitt.Image = global::x_prj_biblio.Properties.Resources.settings_32px;
+            this.bt_Sitt.Image = ((System.Drawing.Image)(resources.GetObject("bt_Sitt.Image")));
             this.bt_Sitt.Location = new System.Drawing.Point(1070, 16);
             this.bt_Sitt.Name = "bt_Sitt";
             this.bt_Sitt.Size = new System.Drawing.Size(45, 43);
             this.bt_Sitt.TabIndex = 4;
             this.bt_Sitt.UseVisualStyleBackColor = false;
             // 
-            // panel22
+            // Sub_infp_panel
             // 
-            this.panel22.Controls.Add(this.button4);
-            this.panel22.Controls.Add(this.button3);
-            this.panel22.Controls.Add(this.button2);
-            this.panel22.Controls.Add(this.label21);
-            this.panel22.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel22.Location = new System.Drawing.Point(168, 763);
-            this.panel22.Name = "panel22";
-            this.panel22.Size = new System.Drawing.Size(1189, 100);
-            this.panel22.TabIndex = 23;
+            this.Sub_infp_panel.Controls.Add(this.button4);
+            this.Sub_infp_panel.Controls.Add(this.button3);
+            this.Sub_infp_panel.Controls.Add(this.button2);
+            this.Sub_infp_panel.Controls.Add(this.label21);
+            this.Sub_infp_panel.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.Sub_infp_panel.Location = new System.Drawing.Point(168, 763);
+            this.Sub_infp_panel.Name = "Sub_infp_panel";
+            this.Sub_infp_panel.Size = new System.Drawing.Size(1189, 100);
+            this.Sub_infp_panel.TabIndex = 23;
             // 
             // button4
             // 
@@ -620,7 +677,7 @@
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.button4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button4.Image = global::x_prj_biblio.Properties.Resources.facebook_32px;
+            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
             this.button4.Location = new System.Drawing.Point(625, 45);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(45, 43);
@@ -648,7 +705,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button2.Image = global::x_prj_biblio.Properties.Resources.whatsapp_32px;
+            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button2.Location = new System.Drawing.Point(523, 45);
             this.button2.Name = "button2";
@@ -666,12 +723,52 @@
             this.label21.TabIndex = 4;
             this.label21.Text = "© 2021, made with favorite by Creative Tim for a better Software";
             // 
-            // books_Control1
+            // panel4
             // 
-            this.books_Control1.Location = new System.Drawing.Point(168, 240);
-            this.books_Control1.Name = "books_Control1";
-            this.books_Control1.Size = new System.Drawing.Size(1189, 525);
-            this.books_Control1.TabIndex = 25;
+            this.panel4.Controls.Add(this.Borrow);
+            this.panel4.Controls.Add(this.Persons);
+            this.panel4.Controls.Add(this.Book);
+            this.panel4.Controls.Add(this.Writer);
+            this.panel4.Location = new System.Drawing.Point(181, 72);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(1006, 162);
+            this.panel4.TabIndex = 26;
+            // 
+            // Persons
+            // 
+            this.Persons.Controls.Add(this.pictureBox4);
+            this.Persons.Controls.Add(this.panel17);
+            this.Persons.Location = new System.Drawing.Point(11, 15);
+            this.Persons.Name = "Persons";
+            this.Persons.Size = new System.Drawing.Size(189, 147);
+            this.Persons.TabIndex = 23;
+            // 
+            // Book
+            // 
+            this.Book.Controls.Add(this.pictureBox2);
+            this.Book.Controls.Add(this.panel12);
+            this.Book.Location = new System.Drawing.Point(264, 10);
+            this.Book.Name = "Book";
+            this.Book.Size = new System.Drawing.Size(207, 158);
+            this.Book.TabIndex = 24;
+            // 
+            // Writer
+            // 
+            this.Writer.Controls.Add(this.pictureBox3);
+            this.Writer.Controls.Add(this.panel14);
+            this.Writer.Location = new System.Drawing.Point(542, 10);
+            this.Writer.Name = "Writer";
+            this.Writer.Size = new System.Drawing.Size(209, 158);
+            this.Writer.TabIndex = 25;
+            // 
+            // Borrow
+            // 
+            this.Borrow.Controls.Add(this.pictureBox1);
+            this.Borrow.Controls.Add(this.panel11);
+            this.Borrow.Location = new System.Drawing.Point(805, 9);
+            this.Borrow.Name = "Borrow";
+            this.Borrow.Size = new System.Drawing.Size(200, 159);
+            this.Borrow.TabIndex = 26;
             // 
             // dashbord_Control1
             // 
@@ -680,40 +777,40 @@
             this.dashbord_Control1.Size = new System.Drawing.Size(1189, 525);
             this.dashbord_Control1.TabIndex = 24;
             // 
+            // books_Control1
+            // 
+            this.books_Control1.Location = new System.Drawing.Point(168, 240);
+            this.books_Control1.Name = "books_Control1";
+            this.books_Control1.Size = new System.Drawing.Size(1189, 525);
+            this.books_Control1.TabIndex = 25;
+            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1357, 863);
-            this.Controls.Add(this.books_Control1);
+            this.Controls.Add(this.panel4);
             this.Controls.Add(this.dashbord_Control1);
-            this.Controls.Add(this.panel22);
-            this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.panel17);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.panel14);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.panel11);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.panel12);
+            this.Controls.Add(this.books_Control1);
+            this.Controls.Add(this.Sub_infp_panel);
+            this.Controls.Add(this.lb_dateTime);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.bt_Notif);
             this.Controls.Add(this.bt_Exit);
             this.Controls.Add(this.bt_Sitt);
-            this.Controls.Add(this.lb_dateTime);
-            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.Progile_inf_panel);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.Side_panel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Dashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dashboard";
             this.Load += new System.EventHandler(this.Dashboard_Load);
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
+            this.Progile_inf_panel.ResumeLayout(false);
+            this.Progile_inf_panel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic_user)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.Side_panel.ResumeLayout(false);
+            this.Side_panel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic_logo)).EndInit();
             this.panel12.ResumeLayout(false);
             this.panel12.PerformLayout();
@@ -727,8 +824,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.panel22.ResumeLayout(false);
-            this.panel22.PerformLayout();
+            this.Sub_infp_panel.ResumeLayout(false);
+            this.Sub_infp_panel.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.Persons.ResumeLayout(false);
+            this.Book.ResumeLayout(false);
+            this.Writer.ResumeLayout(false);
+            this.Borrow.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -736,16 +838,15 @@
 
         #endregion
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel Progile_inf_panel;
         private System.Windows.Forms.PictureBox pic_user;
-        private System.Windows.Forms.Button tb_Person;
-        private System.Windows.Forms.Button bt_Borrow;
+        private System.Windows.Forms.Button tb_Zon;
         private System.Windows.Forms.Button bt_Writer;
         private System.Windows.Forms.Button bt_Book;
         private System.Windows.Forms.PictureBox pic_logo;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel Side_panel;
+        private System.Windows.Forms.Panel Side_btn_col;
         private System.Windows.Forms.Button bt_Dboard;
         private System.Windows.Forms.Label lb_dateTime;
         private System.Windows.Forms.Button bt_Sitt;
@@ -781,12 +882,21 @@
         private System.Windows.Forms.Panel panel16;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label lb_Uname;
-        private System.Windows.Forms.Panel panel22;
+        private System.Windows.Forms.Panel Sub_infp_panel;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label21;
         private Dashbord_Control dashbord_Control1;
         private Books_Control books_Control1;
+        private System.Windows.Forms.Button bt_Publisher;
+        private System.Windows.Forms.Button bt_Category;
+        private System.Windows.Forms.Button bt_Borrow;
+        private System.Windows.Forms.Button tb_Person;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel Borrow;
+        private System.Windows.Forms.Panel Persons;
+        private System.Windows.Forms.Panel Book;
+        private System.Windows.Forms.Panel Writer;
     }
 }

@@ -29,11 +29,11 @@ namespace x_prj_biblio
         {
             ch = "Data Source=SQL5104.site4now.net;Initial Catalog=db_a736ef_01;User Id=db_a736ef_01_admin;Password=dbo_01_1996";
             _con = new SqlConnection(ch);
-        }
-
+        }                  
+             
         ////////////// ----- Show table ----- /////////////
         public DataTable showDataTable(string Sqlcommand)
-        {
+        {            
             _con.Open();
 
             _cmd = new SqlCommand(Sqlcommand, _con);
@@ -87,6 +87,7 @@ namespace x_prj_biblio
 
         public String executer_valeur(String sqlstring)
         {
+            
             _con.Open();
 
             _cmd = new SqlCommand();

@@ -1,7 +1,6 @@
 C:\Users\Aninoss\Documents\Visual Studio 2015\Projects\Lybr_PJ\x_prj_biblio\bin\Debug\x_prj_biblio.exe.config
 C:\Users\Aninoss\Documents\Visual Studio 2015\Projects\Lybr_PJ\x_prj_biblio\obj\Debug\x_prj_biblio.exe
 C:\Users\Aninoss\Documents\Visual Studio 2015\Projects\Lybr_PJ\x_prj_biblio\obj\Debug\x_prj_biblio.pdb
-C:\Users\Aninoss\Documents\Visual Studio 2015\Projects\Lybr_PJ\Lybr_PJ\obj\Debug\x_prj_biblio.Add_Book.resources
 C:\Users\Aninoss\Documents\Visual Studio 2015\Projects\Lybr_PJ\Lybr_PJ\obj\Debug\x_prj_biblio.Add_Borrowing.resources
 C:\Users\Aninoss\Documents\Visual Studio 2015\Projects\Lybr_PJ\Lybr_PJ\obj\Debug\x_prj_biblio.dashboard.resources
 C:\Users\Aninoss\Documents\Visual Studio 2015\Projects\Lybr_PJ\Lybr_PJ\obj\Debug\x_prj_biblio.Ajouter_Bibliothecaire.resources
@@ -21,3 +20,4 @@ C:\Users\Aninoss\Documents\Visual Studio 2015\Projects\Lybr_PJ\Lybr_PJ\obj\Debug
 C:\Users\Aninoss\Documents\Visual Studio 2015\Projects\Lybr_PJ\Lybr_PJ\obj\Debug\x_prj_biblio.Add_Autor.resources
 C:\Users\Aninoss\Documents\Visual Studio 2015\Projects\Lybr_PJ\Lybr_PJ\obj\Debug\x_prj_biblio.Books_Control.resources
 C:\Users\Aninoss\Documents\Visual Studio 2015\Projects\Lybr_PJ\Lybr_PJ\obj\Debug\x_prj_biblio.Dashbord_Control.resources
+C:\Users\Aninoss\Documents\Visual Studio 2015\Projects\Lybr_PJ\Lybr_PJ\obj\Debug\x_prj_biblio.AddBook.resources

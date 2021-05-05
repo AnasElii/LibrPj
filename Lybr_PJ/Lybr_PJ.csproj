@@ -49,11 +49,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Add Book.cs">
-      <SubType>Form</SubType>
+    <Compile Include="AddBook.cs">
+      <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Add Book.Designer.cs">
-      <DependentUpon>Add Book.cs</DependentUpon>
+    <Compile Include="AddBook.Designer.cs">
+      <DependentUpon>AddBook.cs</DependentUpon>
     </Compile>
     <Compile Include="Add_Borrowing.cs">
       <SubType>Form</SubType>
@@ -137,9 +137,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Zon.cs" />
-    <EmbeddedResource Include="Add Book.resx">
-      <DependentUpon>Add Book.cs</DependentUpon>
+    <EmbeddedResource Include="AddBook.resx">
+      <DependentUpon>AddBook.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Add_Borrowing.resx">
       <DependentUpon>Add_Borrowing.cs</DependentUpon>
@@ -176,14 +181,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <None Include="prj_biblioDataSet.xsc">
       <DependentUpon>prj_biblioDataSet.xsd</DependentUpon>
     </None>
@@ -212,65 +212,61 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\eye.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\toppng.com-dashboard-svg-icon-free-dashboard-icon-981x823.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\settings_32px.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\notification_64px.png" />
+    <None Include="Resources\borrow_book_240px.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\notification_32px.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\settings_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
     <None Include="Resources\sign_out_24px.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\calendar_32px.png" />
+    <None Include="Resources\school_60px.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\calendar_16px.png" />
+    <None Include="Resources\toppng.com-dashboard-svg-icon-free-dashboard-icon-981x823.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\facebook_50px.png" />
+    <None Include="Resources\user_24px.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\facebook_16px.png" />
+    <None Include="Resources\user_48px.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\whatsapp_32px.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\instagram_80px.png" />
+    <None Include="Resources\writer_male_48px.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\instagram_32px.png" />
+    <None Include="Resources\books_64px.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\instagram_80px1.png" />
+    <None Include="Resources\calendar_16px.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\facebook_16px1.png" />
+    <None Include="Resources\calendar_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eye.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\facebook_32px.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\instagram_24px.png" />
+    <None Include="Resources\forgot_password_128px.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\instagram_50px.png" />
+    <None Include="Resources\image_128px.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\instagram_24px1.png" />
+    <None Include="Resources\instagram_circle_30px.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\instagram_old_80px.png" />
+    <None Include="Resources\borrow_books_240px.png" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

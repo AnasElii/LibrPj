@@ -63,6 +63,26 @@ namespace x_prj_biblio.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap books_64px {
+            get {
+                object obj = ResourceManager.GetObject("books_64px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap borrow_books_240px {
+            get {
+                object obj = ResourceManager.GetObject("borrow_books_240px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap calendar_16px {
             get {
                 object obj = ResourceManager.GetObject("calendar_16px", resourceCulture);
@@ -93,26 +113,6 @@ namespace x_prj_biblio.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap facebook_16px {
-            get {
-                object obj = ResourceManager.GetObject("facebook_16px", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap facebook_16px1 {
-            get {
-                object obj = ResourceManager.GetObject("facebook_16px1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap facebook_32px {
             get {
                 object obj = ResourceManager.GetObject("facebook_32px", resourceCulture);
@@ -123,9 +123,9 @@ namespace x_prj_biblio.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap facebook_50px {
+        internal static System.Drawing.Bitmap forgot_password_128px {
             get {
-                object obj = ResourceManager.GetObject("facebook_50px", resourceCulture);
+                object obj = ResourceManager.GetObject("forgot_password_128px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -133,9 +133,9 @@ namespace x_prj_biblio.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap instagram_24px {
+        internal static System.Drawing.Bitmap image_128px {
             get {
-                object obj = ResourceManager.GetObject("instagram_24px", resourceCulture);
+                object obj = ResourceManager.GetObject("image_128px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -143,59 +143,9 @@ namespace x_prj_biblio.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap instagram_24px1 {
+        internal static System.Drawing.Bitmap instagram_circle_30px {
             get {
-                object obj = ResourceManager.GetObject("instagram_24px1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap instagram_32px {
-            get {
-                object obj = ResourceManager.GetObject("instagram_32px", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap instagram_50px {
-            get {
-                object obj = ResourceManager.GetObject("instagram_50px", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap instagram_80px {
-            get {
-                object obj = ResourceManager.GetObject("instagram_80px", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap instagram_80px1 {
-            get {
-                object obj = ResourceManager.GetObject("instagram_80px1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap instagram_old_80px {
-            get {
-                object obj = ResourceManager.GetObject("instagram_old_80px", resourceCulture);
+                object obj = ResourceManager.GetObject("instagram_circle_30px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -213,9 +163,9 @@ namespace x_prj_biblio.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap notification_64px {
+        internal static System.Drawing.Bitmap school_60px {
             get {
-                object obj = ResourceManager.GetObject("notification_64px", resourceCulture);
+                object obj = ResourceManager.GetObject("school_60px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -245,7 +195,27 @@ namespace x_prj_biblio.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap toppng_com_dashboard_svg_icon_free_dashboard_icon_981x823 {
             get {
-                object obj = ResourceManager.GetObject("toppng.com-dashboard-svg-icon-free-dashboard-icon-981x823", resourceCulture);
+                object obj = ResourceManager.GetObject("toppng_com_dashboard_svg_icon_free_dashboard_icon_981x823", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap user_24px {
+            get {
+                object obj = ResourceManager.GetObject("user_24px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap user_48px {
+            get {
+                object obj = ResourceManager.GetObject("user_48px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -256,6 +226,16 @@ namespace x_prj_biblio.Properties {
         internal static System.Drawing.Bitmap whatsapp_32px {
             get {
                 object obj = ResourceManager.GetObject("whatsapp_32px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap writer_male_48px {
+            get {
+                object obj = ResourceManager.GetObject("writer_male_48px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

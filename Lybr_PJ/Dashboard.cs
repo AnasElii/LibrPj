@@ -32,8 +32,8 @@ namespace x_prj_biblio
             
             lb_dateTime.Text = DateTime.Now.ToString();
 
-            Side_panel.Height = bt_Dboard.Height;
-            Side_panel.Top = bt_Dboard.Top;
+            Side_btn_col.Height = bt_Dboard.Height;
+            Side_btn_col.Top = bt_Dboard.Top;
             dashbord_Control1.BringToFront();
 
             userInfo();
@@ -97,8 +97,8 @@ namespace x_prj_biblio
 
         private void bt_Dboard_Click(object sender, EventArgs e)
         {
-            Side_panel.Height = bt_Dboard.Height;
-            Side_panel.Top = bt_Dboard.Top;
+            Side_btn_col.Height = bt_Dboard.Height;
+            Side_btn_col.Top = bt_Dboard.Top;
             dashbord_Control1.BringToFront();
 
             bt_Dboard.BackColor = Color.FromArgb(230, 60, 56);
@@ -107,8 +107,8 @@ namespace x_prj_biblio
 
         private void bt_Book_Click(object sender, EventArgs e)
         {
-            Side_panel.Height = bt_Book.Height;
-            Side_panel.Top = bt_Book.Top;
+            Side_btn_col.Height = bt_Book.Height;
+            Side_btn_col.Top = bt_Book.Top;
             books_Control1.BringToFront();
 
             bt_Book.BackColor = Color.FromArgb(230, 60, 56);

@@ -35,8 +35,7 @@ namespace x_prj_biblio
 
         private void Add_Book_Click(object sender, EventArgs e)
         {
-            Add_Book add_book = new Add_Book();
-            add_book.Show();
+           
         }
 
         private void button8_Click(object sender, EventArgs e)
