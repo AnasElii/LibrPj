@@ -40,6 +40,8 @@ namespace x_prj_biblio
             {
                 //Method Edit
                 Console.WriteLine("Edit");
+                c_Person1.Actualiser();
+                
             }
             pic_add.Visible = false;
             c_PersonEdit1.BringToFront();
@@ -54,21 +56,34 @@ namespace x_prj_biblio
                 //Method Add
                 Console.WriteLine("Add");
                 c_PersonEdit1.aDD();
+                c_Person1.Actualiser();
             }
             pic_edit.Visible = false;
             c_PersonEdit1.BringToFront();
             pic_back.BringToFront();
             Hide_pic();
+
         }
 
         private void pic_delete_Click(object sender, EventArgs e)
         {
             ///delete
+                c_Person1.dELETE();
         }
 
         private void pic_print_Click(object sender, EventArgs e)
         {
             //print
+        }
+
+        private void c_Person1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void C_PersonSwitch_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

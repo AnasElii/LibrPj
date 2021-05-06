@@ -20,20 +20,16 @@ namespace x_prj_biblio
         private DateTime dateins;
         private string phone;
         private bool pertype;
-        private Image image;
+        private byte[] image;
+
+        
+        private SqlCommand cmd;
+
+        Connexion c ;
+
+
 
         public int ID
-        private SqlCommand cmd;
-
-        Connexion c ;
-
-
-        private SqlCommand cmd;
-
-        Connexion c ;
-
-
-        public string ID
         {
             get { return _id; }
             set { _id = value; }
@@ -82,7 +78,7 @@ namespace x_prj_biblio
             set { phone = value; }
         }
 
-        public Image Image
+        public Byte[] Image
         {
             get { return image; }
             set { image = value; }
@@ -91,8 +87,7 @@ namespace x_prj_biblio
         {
             c = new Connexion();
         }
-
-        public Person(int id,string email, string pswrd, string firstname, string lastname, DateTime dateins, DateTime birthdate, string phone,bool pertype,Image image):this()
+        public Person(int id,string email, string pswrd, string firstname, string lastname, DateTime dateins, DateTime birthdate, string phone,bool pertype,byte[] image):this()
         {
             this._id = id;
             this._email = email;
@@ -112,41 +107,31 @@ namespace x_prj_biblio
 
         public static int AddPersson(Person person)
         {
-            return LoginForm.con.Add_Value("EXECUTE I_PERSSON '"+person.firstname+"','"+person.lastname+"','"+person.birthdate+"','"+person.phone+"','"+person.password+"','"+person._email+"',"+person.pertype+","+person.image);
-            
-            /*
-            cmd = new SqlCommand("dbo.I_Persson", c.Con);
-            cmd.CommandType = CommandType.StoredProcedure;
-
-            cmd.Parameters.Add("@id_editor", SqlDbType.Int);
-            cmd.Parameters.Add("@aut_id", SqlDbType.Int);
-            cmd.Parameters.Add("@zon_id", SqlDbType.Int);
-            cmd.Parameters.Add("@book_isbn", SqlDbType.VarChar, 50);
-            cmd.Parameters.Add("@title", SqlDbType.VarChar, 50);
-            cmd.Parameters.Add("@page_number", SqlDbType.Int);
-            cmd.Parameters.Add("@date_added", SqlDbType.Date);
-            cmd.Parameters.Add("@date_created", SqlDbType.Date);
-            cmd.Parameters.Add("@quantity", SqlDbType.Int);
-            cmd.Parameters.Add("@category", SqlDbType.VarChar, 20);
-            cmd.Parameters.Add("@image", SqlDbType.VarBinary);
-
-            cmd.Parameters["@aut_id"].Value = a_ID;
-            cmd.Parameters["@id_editor"].Value = p_ID;
-            cmd.Parameters["@zon_id"].Value = zon;
-            cmd.Parameters["@book_isbn"].Value = isbn;
-            cmd.Parameters["@title"].Value = title;
-            cmd.Parameters["@page_number"].Value = page_number;
-            cmd.Parameters["@date_created"].Value = date_created;
-            cmd.Parameters["@date_added"].Value = DateTime.Now;
-            cmd.Parameters["@quantity"].Value = quantity;
-            cmd.Parameters["@category"].Value = category;
-            cmd.Parameters["@image"].Value = imgData;
-
-            cmd.ExecuteNonQuery();
-
-            */
+            return LoginForm.con.Add_Value("EXECUTE I_PERSSON '"+person.firstname+"','"+person.lastname+"','"+person.birthdate+"','"+person.phone+"','"+person.password+"','"+person._email+"',"+person.pertype+",0x"+ String.Join<byte>("", person.image));
+        }
+        public static int DeletePersson(int per_id)
+        {
+            return LoginForm.con.Add_Value("EXECUTE D_PERSSON "+per_id);
+        }
+        public static Person GetPersonById(int perID)
+        {
+            DataTable data = LoginForm.con.showDataTable("exec GetPersonByID "+perID);
+            Person person = new Person();
+            person.ID = (int)data.Rows[0].ItemArray[0];
+            person.Firstname = data.Rows[0].ItemArray[1].ToString();
+            person.LastName = data.Rows[0].ItemArray[2].ToString();
+            person.Dateins = Convert.ToDateTime(data.Rows[0].ItemArray[3]);
+            person.BirthDate = Convert.ToDateTime(data.Rows[0].ItemArray[4]);
+            person.Phone = data.Rows[0].ItemArray[5].ToString();
+            person.Password = data.Rows[0].ItemArray[6].ToString();
+            person.Email = data.Rows[0].ItemArray[7].ToString();
+            person.Pertype = Convert.ToBoolean(data.Rows[0].ItemArray[8]);
+            //person.image = data.Rows[0].ItemArray[9];
+            var age = data.Rows[0].ItemArray[9];
 
 
+
+            return person;
         }
 
     }

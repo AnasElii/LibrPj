@@ -48,10 +48,12 @@ namespace x_prj_biblio
             c = new Connexion();
 
             _dataTable = c.showDataTable(string.Format(@"SELECT * FROM dbo.Person  WHERE per_id = {0}", p.ID));
+            if (_dataTable.Rows.Count>0)
+            {
+            lb_Uname.Text = _dataTable.Rows[0].ItemArray[0]+ " " + _dataTable.Rows[0].ItemArray[1];
+            }
 
-            lb_Uname.Text = _dataTable.Rows[0]["first_name"]+ " " + _dataTable.Rows[0]["last_name"];
-
-            pic_user.Image = getImage();
+            //pic_user.Image = getImage();
         }
 
         private Image getImage()
@@ -60,7 +62,7 @@ namespace x_prj_biblio
             c.Con.Open();
             
 
-            string selectQuery = string.Format(@"SELECT image FROM dbo.Images WHERE id = '{0}'", _dataTable.Rows[0]["image_id"]);
+            string selectQuery = string.Format(@"SELECT image FROM dbo.Images WHERE id = '{0}'", _dataTable.Rows[0].ItemArray[0]);
 
             //Select Image
 
@@ -114,17 +116,13 @@ namespace x_prj_biblio
             bt_Book.BackColor = Color.FromArgb(230, 60, 56);
             bt_Dboard.BackColor = Color.Transparent;
         }
-
-<<<<<<< Updated upstream
-=======
         private void tb_Person_Click(object sender, EventArgs e)
         {
             Side_btn_col.Height = tb_Person.Height;
             Side_btn_col.Top = tb_Person.Top;
-            c_PersonSwitch1.BringToFront();
+            c_PersonSwitch2.BringToFront();
 
-
->>>>>>> Stashed changes
+         }
         private void bt_Writer_Click(object sender, EventArgs e)
         {
             Side_btn_col.Height = bt_Writer.Height;
@@ -134,5 +132,7 @@ namespace x_prj_biblio
             Side_btn_col.BackColor = Color.FromArgb(230, 60, 56);
             Side_btn_col.BackColor = Color.Transparent;
         }
+
+        
     }
 }

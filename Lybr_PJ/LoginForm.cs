@@ -113,8 +113,8 @@ namespace x_prj_biblio
                 this.Hide();
 
                 dataTable = c.showDataTable(string.Format(@"SELECT [per_id],[image_id] FROM dbo.Person  WHERE email = '{0}'", tb_Uname.Text));
-                p.ID = dataTable.Rows[0]["per_id"].ToString();
-                p.Image_Id = dataTable.Rows[0]["image_id"].ToString();                
+                p.ID = (int)dataTable.Rows[0].ItemArray[0];
+                //p.Image_Id = dataTable.Rows[0]["image_id"].ToString();                
 
                 if (cb_Rme.Checked)
                 {

@@ -52,3 +52,5 @@ C:\Users\Ayoub\Documents\GitHub\LibrPj\Lybr_PJ\bin\Debug\x_prj_biblio.pdb
 C:\Users\Aninoss\Documents\Visual Studio 2015\Projects\Lybr_PJ\Lybr_PJ\obj\Debug\x_prj_biblio.C_Person.resources
 C:\Users\Aninoss\Documents\Visual Studio 2015\Projects\Lybr_PJ\Lybr_PJ\obj\Debug\x_prj_biblio.C_PersonEdit.resources
 C:\Users\Aninoss\Documents\Visual Studio 2015\Projects\Lybr_PJ\Lybr_PJ\obj\Debug\x_prj_biblio.C_PersonSwitch.resources
+C:\Users\Ayoub\Documents\GitHub\LibrPj\Lybr_PJ\obj\Debug\x_prj_biblio.ALL_Control.resources
+C:\Users\Ayoub\Documents\GitHub\LibrPj\Lybr_PJ\obj\Debug\x_prj_biblio.Writer_Control.resources

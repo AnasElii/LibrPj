@@ -54,18 +54,19 @@ namespace x_prj_biblio
             // 
             this._Tpertype.AutoSize = true;
             this._Tpertype.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this._Tpertype.Location = new System.Drawing.Point(553, 320);
+            this._Tpertype.Location = new System.Drawing.Point(527, 153);
             this._Tpertype.Name = "_Tpertype";
             this._Tpertype.Size = new System.Drawing.Size(82, 20);
             this._Tpertype.TabIndex = 22;
             this._Tpertype.Text = "Is Admin";
             this._Tpertype.UseVisualStyleBackColor = true;
+            this._Tpertype.CheckedChanged += new System.EventHandler(this._Tpertype_CheckedChanged);
             // 
             // _TDatebirth
             // 
             this._TDatebirth.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this._TDatebirth.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this._TDatebirth.Location = new System.Drawing.Point(283, 373);
+            this._TDatebirth.Location = new System.Drawing.Point(283, 333);
             this._TDatebirth.Name = "_TDatebirth";
             this._TDatebirth.Size = new System.Drawing.Size(88, 24);
             this._TDatebirth.TabIndex = 21;
@@ -75,7 +76,7 @@ namespace x_prj_biblio
             this._TDateRegister.Enabled = false;
             this._TDateRegister.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this._TDateRegister.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this._TDateRegister.Location = new System.Drawing.Point(283, 337);
+            this._TDateRegister.Location = new System.Drawing.Point(283, 280);
             this._TDateRegister.Name = "_TDateRegister";
             this._TDateRegister.Size = new System.Drawing.Size(88, 24);
             this._TDateRegister.TabIndex = 20;
@@ -84,37 +85,40 @@ namespace x_prj_biblio
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(550, 267);
+            this.label8.Location = new System.Drawing.Point(524, 284);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(42, 16);
             this.label8.TabIndex = 18;
             this.label8.Text = "Email";
+            this.label8.Visible = false;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(550, 230);
+            this.label7.Location = new System.Drawing.Point(524, 242);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(66, 16);
             this.label7.TabIndex = 17;
             this.label7.Text = "Password";
+            this.label7.Visible = false;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(550, 192);
+            this.label6.Location = new System.Drawing.Point(524, 202);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(47, 16);
             this.label6.TabIndex = 16;
             this.label6.Text = "Phone";
+            this.label6.Visible = false;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(169, 380);
+            this.label5.Location = new System.Drawing.Point(169, 337);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(71, 16);
             this.label5.TabIndex = 15;
@@ -124,7 +128,7 @@ namespace x_prj_biblio
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(169, 337);
+            this.label4.Location = new System.Drawing.Point(169, 284);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(91, 16);
             this.label4.TabIndex = 19;
@@ -134,7 +138,7 @@ namespace x_prj_biblio
             // 
             this.ds.AutoSize = true;
             this.ds.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ds.Location = new System.Drawing.Point(169, 291);
+            this.ds.Location = new System.Drawing.Point(169, 242);
             this.ds.Name = "ds";
             this.ds.Size = new System.Drawing.Size(73, 16);
             this.ds.TabIndex = 14;
@@ -144,7 +148,7 @@ namespace x_prj_biblio
             // 
             this.dva.AutoSize = true;
             this.dva.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dva.Location = new System.Drawing.Point(169, 245);
+            this.dva.Location = new System.Drawing.Point(169, 202);
             this.dva.Name = "dva";
             this.dva.Size = new System.Drawing.Size(75, 16);
             this.dva.TabIndex = 13;
@@ -154,7 +158,7 @@ namespace x_prj_biblio
             // 
             this.sda.AutoSize = true;
             this.sda.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sda.Location = new System.Drawing.Point(169, 191);
+            this.sda.Location = new System.Drawing.Point(169, 157);
             this.sda.Name = "sda";
             this.sda.Size = new System.Drawing.Size(22, 16);
             this.sda.TabIndex = 12;
@@ -163,31 +167,34 @@ namespace x_prj_biblio
             // _TEmail
             // 
             this._TEmail.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this._TEmail.Location = new System.Drawing.Point(666, 265);
+            this._TEmail.Location = new System.Drawing.Point(637, 280);
             this._TEmail.Name = "_TEmail";
             this._TEmail.Size = new System.Drawing.Size(132, 24);
             this._TEmail.TabIndex = 10;
+            this._TEmail.Visible = false;
             // 
             // _Tpass
             // 
             this._Tpass.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this._Tpass.Location = new System.Drawing.Point(666, 228);
+            this._Tpass.Location = new System.Drawing.Point(637, 238);
             this._Tpass.Name = "_Tpass";
             this._Tpass.Size = new System.Drawing.Size(132, 24);
             this._Tpass.TabIndex = 9;
+            this._Tpass.Visible = false;
             // 
             // _TPhone
             // 
             this._TPhone.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this._TPhone.Location = new System.Drawing.Point(666, 190);
+            this._TPhone.Location = new System.Drawing.Point(637, 198);
             this._TPhone.Name = "_TPhone";
             this._TPhone.Size = new System.Drawing.Size(132, 24);
             this._TPhone.TabIndex = 8;
+            this._TPhone.Visible = false;
             // 
             // _TLastName
             // 
             this._TLastName.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this._TLastName.Location = new System.Drawing.Point(283, 288);
+            this._TLastName.Location = new System.Drawing.Point(283, 238);
             this._TLastName.Name = "_TLastName";
             this._TLastName.Size = new System.Drawing.Size(128, 24);
             this._TLastName.TabIndex = 7;
@@ -195,7 +202,7 @@ namespace x_prj_biblio
             // _TFirstName
             // 
             this._TFirstName.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this._TFirstName.Location = new System.Drawing.Point(283, 242);
+            this._TFirstName.Location = new System.Drawing.Point(283, 198);
             this._TFirstName.Name = "_TFirstName";
             this._TFirstName.Size = new System.Drawing.Size(128, 24);
             this._TFirstName.TabIndex = 6;
@@ -204,7 +211,7 @@ namespace x_prj_biblio
             // 
             this._TID.Enabled = false;
             this._TID.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this._TID.Location = new System.Drawing.Point(283, 191);
+            this._TID.Location = new System.Drawing.Point(283, 153);
             this._TID.Name = "_TID";
             this._TID.Size = new System.Drawing.Size(128, 24);
             this._TID.TabIndex = 11;

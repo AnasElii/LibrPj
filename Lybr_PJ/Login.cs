@@ -42,8 +42,7 @@ namespace x_prj_biblio
         
         public string CheckLogin()
         {
-            c.Con.Open();
-
+            c.Open();
             cmd = new SqlCommand("[dbo].[Admin_Login]",c.Con);
             cmd.CommandType = CommandType.StoredProcedure;
 
@@ -58,7 +57,6 @@ namespace x_prj_biblio
 
             cmd.ExecuteNonQuery();
                         
-            c.Con.Close();
 
             return cmd.Parameters["@responseMessage"].Value.ToString();
 

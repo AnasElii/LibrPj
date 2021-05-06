@@ -104,6 +104,7 @@ namespace x_prj_biblio
             this.c_Person1.Name = "c_Person1";
             this.c_Person1.Size = new System.Drawing.Size(1189, 462);
             this.c_Person1.TabIndex = 8;
+            this.c_Person1.Load += new System.EventHandler(this.c_Person1_Load);
             // 
             // c_PersonEdit1
             // 
@@ -116,15 +117,16 @@ namespace x_prj_biblio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.pic_back);
             this.Controls.Add(this.pic_print);
             this.Controls.Add(this.pic_edit);
             this.Controls.Add(this.pic_delete);
             this.Controls.Add(this.pic_add);
             this.Controls.Add(this.c_Person1);
             this.Controls.Add(this.c_PersonEdit1);
+            this.Controls.Add(this.pic_back);
             this.Name = "C_PersonSwitch";
             this.Size = new System.Drawing.Size(1189, 525);
+            this.Load += new System.EventHandler(this.C_PersonSwitch_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pic_back)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_print)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_edit)).EndInit();

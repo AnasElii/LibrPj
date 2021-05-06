@@ -78,25 +78,19 @@
             this.label21 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.Borrow = new System.Windows.Forms.Panel();
-
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Persons = new System.Windows.Forms.Panel();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.Book = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.Writer = new System.Windows.Forms.Panel();
-
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.bt_Notif = new System.Windows.Forms.Button();
             this.bt_Exit = new System.Windows.Forms.Button();
             this.bt_Sitt = new System.Windows.Forms.Button();
-
-            this.dashbord_Control1 = new x_prj_biblio.Dashbord_Control();
+            this.c_PersonSwitch2 = new x_prj_biblio.C_PersonSwitch();
             this.books_Control1 = new x_prj_biblio.Books_Control();
-<<<<<<< Updated upstream
-=======
-            this.c_PersonSwitch1 = new x_prj_biblio.C_PersonSwitch();
->>>>>>> Stashed changes
+            this.dashbord_Control1 = new x_prj_biblio.Dashbord_Control();
             this.alL_Control1 = new x_prj_biblio.ALL_Control();
             this.Progile_inf_panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic_user)).BeginInit();
@@ -109,17 +103,13 @@
             this.Sub_infp_panel.SuspendLayout();
             this.panel4.SuspendLayout();
             this.Borrow.SuspendLayout();
-
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-
             this.Persons.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.Book.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.Writer.SuspendLayout();
-
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-
             this.SuspendLayout();
             // 
             // panel2
@@ -677,7 +667,6 @@
             this.pictureBox1.TabIndex = 18;
             this.pictureBox1.TabStop = false;
             // 
-
             // Persons
             // 
             this.Persons.Controls.Add(this.pictureBox4);
@@ -729,7 +718,6 @@
             this.Writer.Size = new System.Drawing.Size(209, 158);
             this.Writer.TabIndex = 25;
             // 
-
             // pictureBox3
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(220)))), ((int)(((byte)(255)))));
@@ -786,12 +774,12 @@
             this.bt_Sitt.TabIndex = 4;
             this.bt_Sitt.UseVisualStyleBackColor = false;
             // 
-            // dashbord_Control1
+            // c_PersonSwitch2
             // 
-            this.dashbord_Control1.Location = new System.Drawing.Point(168, 240);
-            this.dashbord_Control1.Name = "dashbord_Control1";
-            this.dashbord_Control1.Size = new System.Drawing.Size(1189, 525);
-            this.dashbord_Control1.TabIndex = 24;
+            this.c_PersonSwitch2.Location = new System.Drawing.Point(156, 240);
+            this.c_PersonSwitch2.Name = "c_PersonSwitch2";
+            this.c_PersonSwitch2.Size = new System.Drawing.Size(1189, 525);
+            this.c_PersonSwitch2.TabIndex = 28;
             // 
             // books_Control1
             // 
@@ -800,15 +788,13 @@
             this.books_Control1.Size = new System.Drawing.Size(1189, 525);
             this.books_Control1.TabIndex = 25;
             // 
-<<<<<<< Updated upstream
-=======
-            // c_PersonSwitch1
+            // dashbord_Control1
             // 
-            this.c_PersonSwitch1.Location = new System.Drawing.Point(168, 260);
-            this.c_PersonSwitch1.Name = "c_PersonSwitch1";
-            this.c_PersonSwitch1.Size = new System.Drawing.Size(1189, 525);
-            this.c_PersonSwitch1.TabIndex = 27;
->>>>>>> Stashed changes
+            this.dashbord_Control1.Location = new System.Drawing.Point(168, 240);
+            this.dashbord_Control1.Name = "dashbord_Control1";
+            this.dashbord_Control1.Size = new System.Drawing.Size(1189, 525);
+            this.dashbord_Control1.TabIndex = 24;
+            // 
             // alL_Control1
             // 
             this.alL_Control1.Location = new System.Drawing.Point(168, 240);
@@ -821,8 +807,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1357, 788);
-            this.Controls.Add(this.c_PersonSwitch1);
             this.Controls.Add(this.panel4);
+            this.Controls.Add(this.c_PersonSwitch2);
             this.Controls.Add(this.books_Control1);
             this.Controls.Add(this.dashbord_Control1);
             this.Controls.Add(this.alL_Control1);
@@ -858,17 +844,13 @@
             this.Sub_infp_panel.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.Borrow.ResumeLayout(false);
-
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-
             this.Persons.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.Book.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.Writer.ResumeLayout(false);
-
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -936,10 +918,10 @@
         private System.Windows.Forms.Panel Persons;
         private System.Windows.Forms.Panel Book;
         private System.Windows.Forms.Panel Writer;
-<<<<<<< Updated upstream
-=======
+
         private C_PersonSwitch c_PersonSwitch1;
->>>>>>> Stashed changes
+
         private ALL_Control alL_Control1;
+        private C_PersonSwitch c_PersonSwitch2;
     }
 }
