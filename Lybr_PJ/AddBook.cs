@@ -19,7 +19,8 @@ namespace x_prj_biblio
         SqlDataAdapter dataAdapter;
         byte[] imgData;
 
-        Connexion c;
+        Connexion c ;
+        Books b;
 
         public AddBook()
         {
@@ -29,17 +30,61 @@ namespace x_prj_biblio
         private void AddBook_Load(object sender, EventArgs e)
         {
             c = new Connexion();
-                        
-            dataTable = c.showDataTable("SELECT * FROM Autor");            
-            cb_Writer.DataSource = dataTable;
-            cb_Writer.DisplayMember = "autor_name";
-            
-            dataTable = c.showDataTable("SELECT * FROM EDITOR");            
-            cb_Publisher.DataSource = dataTable;
-            cb_Publisher.DisplayMember = "EDITOR_name";
+            b = new Books();
 
+            SelectfromTable("SELECT * FROM Autor", "autor_name", cb_Writer);
+            SelectfromTable("SELECT * FROM EDITOR", "EDITOR_name",cb_Publisher);
+            SelectfromTable("SELECT * FROM Category", "nom",cb_cate);
+            SelectfromTable("SELECT * FROM Zon", "nom",cb_zon);
+                
+
+            if (b.ID != null)
+            {
+
+                dataTable = c.showDataTable(String.Format(@"SELECT * FROM dbo.book WHERE book_id = '{0}'", b.ID));
+                
+                using (MemoryStream ms = new MemoryStream(c.getImage(int.Parse(dataTable.Rows[0]["image_id"].ToString()))))
+                {
+                    image = Image.FromStream(ms);
+                    pic_book.Image = image;
+                }
+
+                tb_Title.Text = dataTable.Rows[0]["title"].ToString(); 
+                tb_ISBN.Text = dataTable.Rows[0]["book_isbn"].ToString(); 
+                tb_Pnum.Text = dataTable.Rows[0]["page_number"].ToString(); 
+                tb_Amount.Text = dataTable.Rows[0]["quantity"].ToString(); 
+                mtb_datePub.Text = DateTime.Parse(dataTable.Rows[0]["date_created"].ToString()).ToString("dd:mm:yyyy");
+
+                cb_Writer.Text = c.executer_valeur(string.Format(@"SELECT autor_name FROM Autor WHERE [aut_id] = '{0}'",dataTable.Rows[0]["aut_id"].ToString()));
+                cb_Publisher.Text = c.executer_valeur(string.Format(@"SELECT EDITOR_name FROM EDITOR WHERE [EDITOR_id] = '{0}'", dataTable.Rows[0]["id_editor"].ToString()));
+                cb_cate.Text = c.executer_valeur(string.Format(@"SELECT nom FROM category WHERE [id] = '{0}'", dataTable.Rows[0]["category"].ToString()));
+                cb_zon.Text = c.executer_valeur(string.Format(@"SELECT nom FROM Zon WHERE [id] = '{0}'", dataTable.Rows[0]["zon_id"].ToString()));
+
+                But_Ok.Text = "Update";
+            }
+        }
+
+        void CleanCach()
+        {            
+            tb_Title.Text ="";
+            tb_ISBN.Text = "";
+            tb_Pnum.Text = "";
+            tb_Amount.Text = "";
+            mtb_datePub.Text = "";
+
+            cb_Writer.Text = "";
+            cb_Publisher.Text = "";
+            cb_cate.Text = "";
+            cb_zon.Text = "";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
         }
         
+        void SelectfromTable(string sqlString, string name,ComboBox cb)
+        {
+            dataTable = c.showDataTable(sqlString);
+            cb.DataSource = dataTable;
+            cb.DisplayMember = name;
+        }
+
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
@@ -47,24 +92,33 @@ namespace x_prj_biblio
 
         private void But_Ok_Click(object sender, EventArgs e)
         {
-            Books book = new Books();
-            book.Title = tb_Title.Text;
-            book.ISBN = tb_ISBN.Text;
-            book.Writer = cb_Writer.Text;
-            book.Publisher = cb_Publisher.Text;
-            book.Add_time = DateTime.Parse(dtime_pulish.Text);
-            book.Quantity = int.Parse(tb_Amount.Text);
-            book.Puge_number = int.Parse(tb_Pnum.Text);
-            book.Category = cb_cate.Text;
-            book.ZON = int.Parse(tb_Zon.Text);
-            book.Imag = imgData;
+            b = new Books();
+             
+            b.Title = tb_Title.Text;
+            b.ISBN = tb_ISBN.Text;
+            b.Writer = cb_Writer.Text;
+            b.Publisher = cb_Publisher.Text;
+            b.Add_time = DateTime.Parse(mtb_datePub.Text);
+            b.Quantity = int.Parse(tb_Amount.Text);
+            b.Puge_number = int.Parse(tb_Pnum.Text);
+            b.Category = cb_cate.Text;
+            b.ZON = int.Parse(cb_zon.Text);
+            b.Imag = imgData;
 
-            book.Ajout();
+            if (b.ID != null)            
+                b.Update();
+            else
+                b.Add();
+            CleanCach();
+
         }
 
         private void B_cancel_Click(object sender, EventArgs e)
         {
-            this.Visible = false;            
+            this.Visible = false;
+            CleanCach();
+
+
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)

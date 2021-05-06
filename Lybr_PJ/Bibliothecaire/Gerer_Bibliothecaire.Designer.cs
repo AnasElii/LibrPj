@@ -32,9 +32,9 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Gerer_Bibliothecaire));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.button1 = new System.Windows.Forms.Button();
-            this.prj_biblioDataSet = new x_prj_biblio.prj_biblioDataSet();
+            
             this.bibliothecaireBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.bibliothecaireTableAdapter = new x_prj_biblio.prj_biblioDataSetTableAdapters.BibliothecaireTableAdapter();
+            
             this.codeBiblDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nomBiblDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.prenomBiblDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -44,7 +44,7 @@
             this.motDePassDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.permissionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.prj_biblioDataSet)).BeginInit();
+            
             ((System.ComponentModel.ISupportInitialize)(this.bibliothecaireBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -79,21 +79,14 @@
             this.button1.Text = "Ajouter Bibliothecaire";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // prj_biblioDataSet
-            // 
-            this.prj_biblioDataSet.DataSetName = "prj_biblioDataSet";
-            this.prj_biblioDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.button1.Click += new System.EventHandler(this.button1_Click);            
             // 
             // bibliothecaireBindingSource
             // 
-            this.bibliothecaireBindingSource.DataMember = "Bibliothecaire";
-            this.bibliothecaireBindingSource.DataSource = this.prj_biblioDataSet;
+            this.bibliothecaireBindingSource.DataMember = "Bibliothecaire";            
             // 
             // bibliothecaireTableAdapter
-            // 
-            this.bibliothecaireTableAdapter.ClearBeforeFill = true;
+            //             
             // 
             // codeBiblDataGridViewTextBoxColumn
             // 
@@ -154,8 +147,7 @@
             this.Name = "Gerer_Bibliothecaire";
             this.Text = "Gerer_Bibliothecaire";
             this.Load += new System.EventHandler(this.Gerer_Bibliothecaire_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.prj_biblioDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();            
             ((System.ComponentModel.ISupportInitialize)(this.bibliothecaireBindingSource)).EndInit();
             this.ResumeLayout(false);
 
@@ -164,10 +156,8 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button1;
-        private prj_biblioDataSet prj_biblioDataSet;
-        private System.Windows.Forms.BindingSource bibliothecaireBindingSource;
-        private prj_biblioDataSetTableAdapters.BibliothecaireTableAdapter bibliothecaireTableAdapter;
+        private System.Windows.Forms.Button button1;       
+        private System.Windows.Forms.BindingSource bibliothecaireBindingSource;        
         private System.Windows.Forms.DataGridViewTextBoxColumn codeBiblDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nomBiblDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn prenomBiblDataGridViewTextBoxColumn;

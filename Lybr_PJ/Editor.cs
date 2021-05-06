@@ -15,7 +15,7 @@ namespace x_prj_biblio
         private DateTime datecred;
         private SqlCommand cmd;
 
-        private Connexion c;
+        Connexion c = LoginForm.c;
 
         public string ID
         {
@@ -37,7 +37,7 @@ namespace x_prj_biblio
 
         public Editor()
         {
-            c = new Connexion();
+            
         }
 
         public Editor(string nom, DateTime datecred)

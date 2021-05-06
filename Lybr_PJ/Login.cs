@@ -15,7 +15,7 @@ namespace x_prj_biblio
         private string password;
         protected SqlCommand cmd;
 
-        public Connexion c;
+        Connexion c = LoginForm.c;
 
         public string Email
         {
@@ -36,8 +36,7 @@ namespace x_prj_biblio
         }
 
         public Login()
-        {
-            c = new Connexion();
+        {            
         }
         
         public string CheckLogin()

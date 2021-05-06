@@ -41,15 +41,15 @@
             this.cb_Publisher = new System.Windows.Forms.ComboBox();
             this.label12 = new System.Windows.Forms.Label();
             this.tb_ISBN = new System.Windows.Forms.TextBox();
-            this.dtime_pulish = new System.Windows.Forms.DateTimePicker();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.cb_cate = new System.Windows.Forms.ComboBox();
             this.tb_Amount = new System.Windows.Forms.TextBox();
             this.tb_Pnum = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
-            this.tb_Zon = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.mtb_datePub = new System.Windows.Forms.MaskedTextBox();
+            this.cb_zon = new System.Windows.Forms.ComboBox();
             this.But_Ok = new System.Windows.Forms.Button();
             this.B_cancel = new System.Windows.Forms.Button();
             this.pic_book = new System.Windows.Forms.PictureBox();
@@ -166,13 +166,6 @@
             this.tb_ISBN.Size = new System.Drawing.Size(160, 20);
             this.tb_ISBN.TabIndex = 2;
             // 
-            // dtime_pulish
-            // 
-            this.dtime_pulish.Location = new System.Drawing.Point(221, 98);
-            this.dtime_pulish.Name = "dtime_pulish";
-            this.dtime_pulish.Size = new System.Drawing.Size(194, 20);
-            this.dtime_pulish.TabIndex = 5;
-            // 
             // label13
             // 
             this.label13.AutoSize = true;
@@ -225,16 +218,10 @@
             this.label15.TabIndex = 80;
             this.label15.Text = "Zon";
             // 
-            // tb_Zon
-            // 
-            this.tb_Zon.Location = new System.Drawing.Point(221, 322);
-            this.tb_Zon.Name = "tb_Zon";
-            this.tb_Zon.Size = new System.Drawing.Size(128, 20);
-            this.tb_Zon.TabIndex = 9;
-            // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.tb_Zon);
+            this.panel1.Controls.Add(this.mtb_datePub);
+            this.panel1.Controls.Add(this.cb_zon);
             this.panel1.Controls.Add(this.But_Ok);
             this.panel1.Controls.Add(this.B_cancel);
             this.panel1.Controls.Add(this.label15);
@@ -243,7 +230,6 @@
             this.panel1.Controls.Add(this.cb_cate);
             this.panel1.Controls.Add(this.label14);
             this.panel1.Controls.Add(this.label13);
-            this.panel1.Controls.Add(this.dtime_pulish);
             this.panel1.Controls.Add(this.tb_ISBN);
             this.panel1.Controls.Add(this.label12);
             this.panel1.Controls.Add(this.cb_Publisher);
@@ -262,6 +248,23 @@
             this.panel1.Size = new System.Drawing.Size(678, 484);
             this.panel1.TabIndex = 56;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // mtb_datePub
+            // 
+            this.mtb_datePub.Location = new System.Drawing.Point(221, 97);
+            this.mtb_datePub.Mask = "00/00/0000";
+            this.mtb_datePub.Name = "mtb_datePub";
+            this.mtb_datePub.Size = new System.Drawing.Size(73, 20);
+            this.mtb_datePub.TabIndex = 82;
+            this.mtb_datePub.ValidatingType = typeof(System.DateTime);
+            // 
+            // cb_zon
+            // 
+            this.cb_zon.FormattingEnabled = true;
+            this.cb_zon.Location = new System.Drawing.Point(221, 316);
+            this.cb_zon.Name = "cb_zon";
+            this.cb_zon.Size = new System.Drawing.Size(160, 21);
+            this.cb_zon.TabIndex = 81;
             // 
             // But_Ok
             // 
@@ -331,7 +334,6 @@
         private System.Windows.Forms.ComboBox cb_Publisher;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TextBox tb_ISBN;
-        private System.Windows.Forms.DateTimePicker dtime_pulish;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.ComboBox cb_cate;
@@ -340,7 +342,8 @@
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Button B_cancel;
         private System.Windows.Forms.Button But_Ok;
-        private System.Windows.Forms.TextBox tb_Zon;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.MaskedTextBox mtb_datePub;
+        private System.Windows.Forms.ComboBox cb_zon;
     }
 }

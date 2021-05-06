@@ -21,7 +21,7 @@ namespace x_prj_biblio
         private static string _image_id;
         private SqlCommand cmd;
 
-        private Connexion con;
+        Connexion c = LoginForm.c;
 
         public string ID
         {
@@ -78,8 +78,7 @@ namespace x_prj_biblio
         }
 
         public Person()
-        {
-            con = new Connexion();
+        {            
         }
 
         public Person(string email, string pswrd, string firstname, string lastname, DateTime birthdate, string phone)

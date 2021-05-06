@@ -11,9 +11,11 @@ namespace x_prj_biblio
     public class Connexion
     {
         private static SqlConnection _con;
-        private SqlCommand _cmd;
-        private DataTable _dataTable;
-        private SqlDataAdapter _dataAdapter;
+        private SqlCommand cmd;
+        private DataTable dataTable;
+        private SqlDataReader dataReader;
+        private SqlDataAdapter dataAdapter;
+        byte[] imgData;
 
         string ch;
 
@@ -33,20 +35,26 @@ namespace x_prj_biblio
              
         ////////////// ----- Show table ----- /////////////
         public DataTable showDataTable(string Sqlcommand)
-        {            
-            _con.Open();
+        {
+            if(_con.State != ConnectionState.Open)
+            {
+                _con.Open();
+            }
 
-            _cmd = new SqlCommand(Sqlcommand, _con);
+            cmd = new SqlCommand(Sqlcommand, _con);
 
-            _dataTable = new DataTable();
-            _cmd.ExecuteNonQuery();
+            dataTable = new DataTable();
+            cmd.ExecuteNonQuery();
 
-            _dataAdapter = new SqlDataAdapter(_cmd);
-            _dataAdapter.Fill(_dataTable);
+            dataAdapter = new SqlDataAdapter(cmd);
+            dataAdapter.Fill(dataTable);
 
-            _con.Close();
-            
-            return _dataTable;
+            if (_con.State == ConnectionState.Open)
+            {
+                _con.Close();
+            }
+
+            return dataTable;
         }
 
         ////////////// ----- Show table Using Proc ID ----- //////////////
@@ -55,46 +63,70 @@ namespace x_prj_biblio
 
             _con.Open();
 
-            SqlCommand _cmd = new SqlCommand(Sqlcommand, _con);
-            _cmd.CommandType = CommandType.StoredProcedure;
+            SqlCommand cmd = new SqlCommand(Sqlcommand, _con);
+            cmd.CommandType = CommandType.StoredProcedure;
 
-            _cmd.Parameters.Add(idName, SqlDbType.UniqueIdentifier);
+            cmd.Parameters.Add(idName, SqlDbType.UniqueIdentifier);
 
-            _cmd.Parameters[idName].Value = Guid.Parse("");
+            cmd.Parameters[idName].Value = Guid.Parse("");
 
-            _dataTable = new DataTable();
-            _cmd.ExecuteNonQuery();
+            dataTable = new DataTable();
+            cmd.ExecuteNonQuery();
 
-            _dataAdapter = new SqlDataAdapter(_cmd);
-            _dataAdapter.Fill(_dataTable);
+            dataAdapter = new SqlDataAdapter(cmd);
+            dataAdapter.Fill(dataTable);
 
             _con.Close();
 
-            return _dataTable;
+            return dataTable;
         }
 
+        ////////////// ----- get Image ----- //////////////
+        public byte[] getImage(int imagId)
+        {
+            _con.Open();
+            
+            string selectQuery = string.Format(@"SELECT image FROM dbo.Images WHERE id = '{0}'", imagId);
+
+            //Select Image
+            
+            cmd = new SqlCommand(selectQuery, _con);
+            dataReader = cmd.ExecuteReader();
+
+            if (dataReader.Read())
+            {
+                imgData = (byte[])dataReader[0];                
+            }
+
+            dataReader.Close();
+            _con.Close();
+            return imgData;
+        }
+
+        ////////////// ----- Add Value ----- //////////////
         public int Add_Value(String sqlstring)
         {
             _con.Open();
 
-            _cmd = new SqlCommand(sqlstring,_con);            
-            int numb = _cmd.ExecuteNonQuery();
+            cmd = new SqlCommand(sqlstring,_con);            
+            int numb = cmd.ExecuteNonQuery();
 
             Con.Close();
 
             return numb;
         }
 
+        ////////////// ----- Executer Valeur ----- //////////////
         public String executer_valeur(String sqlstring)
         {
             
             _con.Open();
 
-            _cmd = new SqlCommand();
-            _cmd.Connection = _con;
-            _cmd.CommandText = sqlstring;
+            cmd = new SqlCommand();
+            cmd.Connection = _con;
+            cmd.CommandText = sqlstring;
 
-            string str = _cmd.ExecuteScalar().ToString();
+            string str = cmd.ExecuteScalar().ToString();
 
             _con.Close();
 

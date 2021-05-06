@@ -11,10 +11,9 @@ namespace x_prj_biblio
     class Zon
     {
         private static string _id;
-        private string nom;       
-        private SqlCommand cmd;
+        private string nom;
 
-        private Connexion con;
+        private Connexion c = LoginForm.c;
 
         public string ID
         {
@@ -29,8 +28,7 @@ namespace x_prj_biblio
         }
         
         public Zon()
-        {
-            con = new Connexion();
+        {            
         }
 
         public Zon(string nom)

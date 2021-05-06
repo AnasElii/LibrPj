@@ -19,7 +19,7 @@ namespace x_prj_biblio
         private SqlDataReader reader;
         private Image profImage;
 
-        private Connexion c;
+        Connexion c = LoginForm.c;
         private Person p;
 
         public Dashboard()
@@ -39,12 +39,11 @@ namespace x_prj_biblio
             userInfo();
 
         }
-
+        
         //-----Profile Info Change
 
         private void userInfo()
-        {
-            c = new Connexion();
+        {            
             p = new Person();
 
             _dataTable = c.showDataTable(string.Format(@"SELECT * FROM dbo.Person  WHERE per_id = '{0}'", p.ID));
@@ -113,6 +112,16 @@ namespace x_prj_biblio
 
             bt_Book.BackColor = Color.FromArgb(230, 60, 56);
             bt_Dboard.BackColor = Color.Transparent;
+        }
+
+        private void bt_Writer_Click(object sender, EventArgs e)
+        {
+            Side_btn_col.Height = bt_Writer.Height;
+            Side_btn_col.Top = bt_Writer.Top;
+            alL_Control1.BringToFront();
+
+            Side_btn_col.BackColor = Color.FromArgb(230, 60, 56);
+            Side_btn_col.BackColor = Color.Transparent;
         }
     }
 }

@@ -31,6 +31,8 @@ namespace x_prj_biblio
 
         private void LoginForm_Load(object sender, EventArgs e)
         {
+            c = new Connexion();
+
             bt_Shide.TabStop = false;
             bt_Shide.FlatStyle = FlatStyle.Flat;
             bt_Shide.FlatAppearance.BorderSize = 0;

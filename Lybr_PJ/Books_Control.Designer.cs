@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Books_Control));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.cb_Cate = new System.Windows.Forms.ComboBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -52,7 +52,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.panel21 = new System.Windows.Forms.Panel();
             this.label20 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pic_book = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
@@ -65,7 +65,7 @@
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DG_book)).BeginInit();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_book)).BeginInit();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -121,18 +121,18 @@
             // DG_book
             // 
             this.DG_book.AllowUserToAddRows = false;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.DG_book.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.DG_book.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.DG_book.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.DG_book.BackgroundColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.ControlLightLight;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DG_book.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.ControlLightLight;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DG_book.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.DG_book.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DG_book.Location = new System.Drawing.Point(11, 134);
             this.DG_book.Name = "DG_book";
@@ -141,7 +141,7 @@
             this.DG_book.Size = new System.Drawing.Size(820, 302);
             this.DG_book.TabIndex = 45;
             this.DG_book.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DG_book_CellClick);
-            this.DG_book.Click += new System.EventHandler(this.DG_book_Click);
+            this.DG_book.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.DG_book_CellMouseDoubleClick);
             // 
             // button1
             // 
@@ -195,7 +195,7 @@
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.panel21);
             this.panel1.Controls.Add(this.label20);
-            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.pic_book);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(262, 484);
@@ -288,16 +288,16 @@
             this.label20.TabIndex = 56;
             this.label20.Text = "Books Info";
             // 
-            // pictureBox1
+            // pic_book
             // 
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(28, 77);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(178, 150);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 49;
-            this.pictureBox1.TabStop = false;
+            this.pic_book.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pic_book.Image = ((System.Drawing.Image)(resources.GetObject("pic_book.Image")));
+            this.pic_book.Location = new System.Drawing.Point(28, 77);
+            this.pic_book.Name = "pic_book";
+            this.pic_book.Size = new System.Drawing.Size(160, 151);
+            this.pic_book.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pic_book.TabIndex = 49;
+            this.pic_book.TabStop = false;
             // 
             // panel2
             // 
@@ -363,6 +363,7 @@
             this.Delete_Book.Text = "Delete Book";
             this.Delete_Book.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Delete_Book.UseVisualStyleBackColor = true;
+            this.Delete_Book.Click += new System.EventHandler(this.Delete_Book_Click);
             // 
             // Edit_Book
             // 
@@ -376,6 +377,7 @@
             this.Edit_Book.Text = "Edit Book";
             this.Edit_Book.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Edit_Book.UseVisualStyleBackColor = true;
+            this.Edit_Book.Click += new System.EventHandler(this.Edit_Book_Click);
             // 
             // Add_Book
             // 
@@ -415,7 +417,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.DG_book)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_book)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.ResumeLayout(false);
@@ -434,7 +436,7 @@
         private System.Windows.Forms.Button Edit_Book;
         private System.Windows.Forms.Button Add_Book;
         private System.Windows.Forms.ComboBox cb_Cate;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pic_book;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;

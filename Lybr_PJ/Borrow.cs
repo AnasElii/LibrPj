@@ -16,7 +16,8 @@ namespace x_prj_biblio
         private float fresh;
 
         private SqlCommand cmd;
-        private Connexion con;
+
+        Connexion c = LoginForm.c;
         private Person p;
         private Books b;
 

@@ -11,38 +11,48 @@ namespace x_prj_biblio
     class Autor
     {
         private static string id;
-        private String nom;
-        private DateTime datenes;
-        private SqlCommand cmd;
+        private string nom;
+        private DateTime birth_date;
 
-        private Connexion c;
+        Connexion c = LoginForm.c;
 
         public string ID
         {
             get { return id; }
             set { id = value; }
         }
+
         public string Nom
         {
             get { return nom; }
             set { nom = value; }
         }
 
-        public DateTime Datenes
+        public DateTime Birth_Date
         {
-            get { return datenes; }
-            set { datenes = value; }
+            get { return birth_date; }
+            set { birth_date = value; }
         }
 
         public Autor()
         {
-            c = new Connexion();
+
         }
 
-        public Autor(string nom, DateTime datenes)
+        public Autor(String nom, DateTime birth_date)
         {
-            this.nom = nom;            
-            this.datenes = datenes;
+            this.nom = nom;
+            this.birth_date = birth_date;
+        }
+
+        public void ajout() //ajout
+        {
+
+        }
+
+        public void lister() //lister
+        {
+
         }
     }
 }

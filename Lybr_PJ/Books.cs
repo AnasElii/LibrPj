@@ -25,8 +25,14 @@ namespace x_prj_biblio
         private byte[] imgData;
         private int zon;
 
+        Connexion c ;
         private Zon z;
-        private Connexion c;
+
+        public string ID
+        {
+            get { return _id; }
+            set { _id = value; }
+        }
 
         public string Title
         {
@@ -90,7 +96,7 @@ namespace x_prj_biblio
 
         public Books()
         {
-            c = new Connexion();
+          
         }
         public Books(string isbn, string book_editor, string title, string puge_number, int quantity, DateTime date_created, string category)
         {
@@ -103,7 +109,8 @@ namespace x_prj_biblio
         }
 
         int autorId()
-        {          
+        {
+            c = new Connexion();
 
             int i = int.Parse(c.executer_valeur(string.Format(@"SELECT aut_id FROM Autor WHERE autor_name = '{0}'", book_autor)));
             
@@ -112,17 +119,39 @@ namespace x_prj_biblio
 
         int PublisherId()
         {
+            c = new Connexion();
+
             int i = int.Parse(c.executer_valeur(string.Format(@"SELECT [EDITOR_id] FROM editor WHERE [EDITOR_name] = '{0}'", book_editor)));
              
             return i;
         }
 
-        
-
-        public void Ajout()
+        int CategoryID()
         {
+            c = new Connexion();
+
+            int i = int.Parse(c.executer_valeur(string.Format(@"Select [id] from [dbo].[Category] WHERE [nom] = '{0}'", category)));
+
+            return i;
+        }
+
+        int ZonID()
+        {
+            c = new Connexion();
+
+            int i = int.Parse(c.executer_valeur(string.Format(@"SELECT [id] FROM [dbo].[Zon] WHERE [nom] =  '{0}'", zon)));
+
+            return i;
+        }
+
+        public void Add()
+        {
+            c = new Connexion();
+
             int a_ID = autorId();
             int p_ID = PublisherId();
+            int c_ID = CategoryID();
+            int z_ID = ZonID();
 
             c.Con.Open();
 
@@ -138,33 +167,47 @@ namespace x_prj_biblio
             cmd.Parameters.Add("@date_added", SqlDbType.Date);
             cmd.Parameters.Add("@date_created", SqlDbType.Date);
             cmd.Parameters.Add("@quantity", SqlDbType.Int);
-            cmd.Parameters.Add("@category", SqlDbType.VarChar, 20);
+            cmd.Parameters.Add("@category", SqlDbType.Int);
             cmd.Parameters.Add("@image", SqlDbType.VarBinary);
 
             cmd.Parameters["@aut_id"].Value = a_ID;
             cmd.Parameters["@id_editor"].Value = p_ID;            
-            cmd.Parameters["@zon_id"].Value = zon;
+            cmd.Parameters["@zon_id"].Value = z_ID;
             cmd.Parameters["@book_isbn"].Value = isbn;
             cmd.Parameters["@title"].Value = title;
             cmd.Parameters["@page_number"].Value = page_number;
             cmd.Parameters["@date_created"].Value = date_created;
             cmd.Parameters["@date_added"].Value = DateTime.Now;
             cmd.Parameters["@quantity"].Value = quantity;
-            cmd.Parameters["@category"].Value = category;
+            cmd.Parameters["@category"].Value = c_ID;
             cmd.Parameters["@image"].Value = imgData;
 
             cmd.ExecuteNonQuery();
             c.Con.Close();
         }
 
-        public void Modefi()
+        public void Update()
         {
 
         }
 
-        public void Supprem()
+        public void Delete()
         {
+            c = new Connexion();
+            
 
+            c.Con.Open();
+
+            cmd = new SqlCommand("[dbo].[D_BOOK]", c.Con);
+            cmd.CommandType = CommandType.StoredProcedure;
+
+            cmd.Parameters.Add("@book_id", SqlDbType.Int);
+            cmd.Parameters["@book_id"].Value = int.Parse(_id);
+
+            cmd.ExecuteNonQuery();
+            c.Con.Close();
+
+            _id = null;
         }
 
     }
