@@ -21,3 +21,27 @@ C:\Users\Aninoss\Documents\Visual Studio 2015\Projects\Lybr_PJ\Lybr_PJ\obj\Debug
 C:\Users\Aninoss\Documents\Visual Studio 2015\Projects\Lybr_PJ\Lybr_PJ\obj\Debug\x_prj_biblio.Books_Control.resources
 C:\Users\Aninoss\Documents\Visual Studio 2015\Projects\Lybr_PJ\Lybr_PJ\obj\Debug\x_prj_biblio.Dashbord_Control.resources
 C:\Users\Aninoss\Documents\Visual Studio 2015\Projects\Lybr_PJ\Lybr_PJ\obj\Debug\x_prj_biblio.AddBook.resources
+C:\Users\Ayoub\Documents\GitHub\LibrPj\Lybr_PJ\obj\Debug\Lybr_PJ.csprojAssemblyReference.cache
+C:\Users\Ayoub\Documents\GitHub\LibrPj\Lybr_PJ\obj\Debug\x_prj_biblio.AddBook.resources
+C:\Users\Ayoub\Documents\GitHub\LibrPj\Lybr_PJ\obj\Debug\x_prj_biblio.Add_Borrowing.resources
+C:\Users\Ayoub\Documents\GitHub\LibrPj\Lybr_PJ\obj\Debug\x_prj_biblio.Add_Autor.resources
+C:\Users\Ayoub\Documents\GitHub\LibrPj\Lybr_PJ\obj\Debug\x_prj_biblio.Ajouter_Bibliothecaire.resources
+C:\Users\Ayoub\Documents\GitHub\LibrPj\Lybr_PJ\obj\Debug\x_prj_biblio.Books_Control.resources
+C:\Users\Ayoub\Documents\GitHub\LibrPj\Lybr_PJ\obj\Debug\x_prj_biblio.C_Person.resources
+C:\Users\Ayoub\Documents\GitHub\LibrPj\Lybr_PJ\obj\Debug\x_prj_biblio.C_PersonEdit.resources
+C:\Users\Ayoub\Documents\GitHub\LibrPj\Lybr_PJ\obj\Debug\x_prj_biblio.C_PersonSwitch.resources
+C:\Users\Ayoub\Documents\GitHub\LibrPj\Lybr_PJ\obj\Debug\x_prj_biblio.Dashboard.resources
+C:\Users\Ayoub\Documents\GitHub\LibrPj\Lybr_PJ\obj\Debug\x_prj_biblio.Dashbord_Control.resources
+C:\Users\Ayoub\Documents\GitHub\LibrPj\Lybr_PJ\obj\Debug\x_prj_biblio.Gerer_Autor.resources
+C:\Users\Ayoub\Documents\GitHub\LibrPj\Lybr_PJ\obj\Debug\x_prj_biblio.Gerer_Bibliothecaire.resources
+C:\Users\Ayoub\Documents\GitHub\LibrPj\Lybr_PJ\obj\Debug\x_prj_biblio.LoginForm.resources
+C:\Users\Ayoub\Documents\GitHub\LibrPj\Lybr_PJ\obj\Debug\x_prj_biblio.Gerer_Borrowing.resources
+C:\Users\Ayoub\Documents\GitHub\LibrPj\Lybr_PJ\obj\Debug\x_prj_biblio.Manage_Books.resources
+C:\Users\Ayoub\Documents\GitHub\LibrPj\Lybr_PJ\obj\Debug\x_prj_biblio.Properties.Resources.resources
+C:\Users\Ayoub\Documents\GitHub\LibrPj\Lybr_PJ\obj\Debug\Lybr_PJ.csproj.GenerateResource.cache
+C:\Users\Ayoub\Documents\GitHub\LibrPj\Lybr_PJ\obj\Debug\Lybr_PJ.csproj.CoreCompileInputs.cache
+C:\Users\Ayoub\Documents\GitHub\LibrPj\Lybr_PJ\obj\Debug\x_prj_biblio.exe
+C:\Users\Ayoub\Documents\GitHub\LibrPj\Lybr_PJ\obj\Debug\x_prj_biblio.pdb
+C:\Users\Ayoub\Documents\GitHub\LibrPj\Lybr_PJ\bin\Debug\x_prj_biblio.exe.config
+C:\Users\Ayoub\Documents\GitHub\LibrPj\Lybr_PJ\bin\Debug\x_prj_biblio.exe
+C:\Users\Ayoub\Documents\GitHub\LibrPj\Lybr_PJ\bin\Debug\x_prj_biblio.pdb

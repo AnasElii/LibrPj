@@ -19,7 +19,8 @@ namespace x_prj_biblio
         private List<string> infList;
         DataTable dataTable;
 
-        public static Connexion c;
+        public Connexion c;
+        public static Connexion con;
         private Login l;
         private Person p;
         private Dashboard d;
@@ -98,7 +99,7 @@ namespace x_prj_biblio
             p = new Person();
             l = new Login();
             c = new Connexion();
-
+            con = c;
             l.Email = tb_Uname.Text;
             l.PassWord = tb_Pword.Text;
 

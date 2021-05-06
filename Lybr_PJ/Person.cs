@@ -19,9 +19,6 @@ namespace x_prj_biblio
         private DateTime dateins;
         private string phone;
         private static string _image_id;
-        private SqlCommand cmd;
-
-        private Connexion con;
 
         public string ID
         {
@@ -79,10 +76,10 @@ namespace x_prj_biblio
 
         public Person()
         {
-            con = new Connexion();
+            
         }
 
-        public Person(string email, string pswrd, string firstname, string lastname, DateTime birthdate, string phone)
+        public Person(string email, string pswrd, string firstname, string lastname, DateTime birthdate, string phone):this()
         {
             this.password = pswrd;
             this.firstname = firstname;
@@ -90,5 +87,12 @@ namespace x_prj_biblio
             this.birthdate = birthdate;
             this.phone = phone;
         }
+
+        public static DataTable GetPerson()
+        {
+            return LoginForm.con.showDataTable("select * from [dbo].[_getPerson]");
+        }
+
+
     }
 }

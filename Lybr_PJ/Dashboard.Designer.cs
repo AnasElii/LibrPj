@@ -38,13 +38,13 @@
             this.bt_Book = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.Side_panel = new System.Windows.Forms.Panel();
-            this.tb_Person = new System.Windows.Forms.Button();
-            this.bt_Category = new System.Windows.Forms.Button();
-            this.bt_Publisher = new System.Windows.Forms.Button();
-            this.Side_btn_col = new System.Windows.Forms.Panel();
             this.pic_logo = new System.Windows.Forms.PictureBox();
-            this.bt_Borrow = new System.Windows.Forms.Button();
+            this.Side_btn_col = new System.Windows.Forms.Panel();
             this.bt_Dboard = new System.Windows.Forms.Button();
+            this.bt_Borrow = new System.Windows.Forms.Button();
+            this.bt_Publisher = new System.Windows.Forms.Button();
+            this.bt_Category = new System.Windows.Forms.Button();
+            this.tb_Person = new System.Windows.Forms.Button();
             this.lb_dateTime = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel12 = new System.Windows.Forms.Panel();
@@ -84,10 +84,10 @@
             this.button2 = new System.Windows.Forms.Button();
             this.label21 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.Borrow = new System.Windows.Forms.Panel();
             this.Persons = new System.Windows.Forms.Panel();
             this.Book = new System.Windows.Forms.Panel();
             this.Writer = new System.Windows.Forms.Panel();
-            this.Borrow = new System.Windows.Forms.Panel();
             this.dashbord_Control1 = new x_prj_biblio.Dashbord_Control();
             this.books_Control1 = new x_prj_biblio.Books_Control();
             this.Progile_inf_panel.SuspendLayout();
@@ -104,10 +104,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.Sub_infp_panel.SuspendLayout();
             this.panel4.SuspendLayout();
+            this.Borrow.SuspendLayout();
             this.Persons.SuspendLayout();
             this.Book.SuspendLayout();
             this.Writer.SuspendLayout();
-            this.Borrow.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel2
@@ -218,55 +218,8 @@
             this.Side_panel.Dock = System.Windows.Forms.DockStyle.Left;
             this.Side_panel.Location = new System.Drawing.Point(0, 0);
             this.Side_panel.Name = "Side_panel";
-            this.Side_panel.Size = new System.Drawing.Size(168, 863);
+            this.Side_panel.Size = new System.Drawing.Size(168, 788);
             this.Side_panel.TabIndex = 0;
-            // 
-            // tb_Person
-            // 
-            this.tb_Person.FlatAppearance.BorderSize = 0;
-            this.tb_Person.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.tb_Person.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.tb_Person.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.tb_Person.Location = new System.Drawing.Point(12, 533);
-            this.tb_Person.Name = "tb_Person";
-            this.tb_Person.Size = new System.Drawing.Size(153, 48);
-            this.tb_Person.TabIndex = 10;
-            this.tb_Person.Text = "Person";
-            this.tb_Person.UseVisualStyleBackColor = true;
-            // 
-            // bt_Category
-            // 
-            this.bt_Category.FlatAppearance.BorderSize = 0;
-            this.bt_Category.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_Category.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.bt_Category.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.bt_Category.Location = new System.Drawing.Point(12, 425);
-            this.bt_Category.Name = "bt_Category";
-            this.bt_Category.Size = new System.Drawing.Size(153, 48);
-            this.bt_Category.TabIndex = 9;
-            this.bt_Category.Text = "Categoty";
-            this.bt_Category.UseVisualStyleBackColor = true;
-            // 
-            // bt_Publisher
-            // 
-            this.bt_Publisher.FlatAppearance.BorderSize = 0;
-            this.bt_Publisher.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_Publisher.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.bt_Publisher.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.bt_Publisher.Location = new System.Drawing.Point(12, 371);
-            this.bt_Publisher.Name = "bt_Publisher";
-            this.bt_Publisher.Size = new System.Drawing.Size(153, 48);
-            this.bt_Publisher.TabIndex = 8;
-            this.bt_Publisher.Text = "Publisher";
-            this.bt_Publisher.UseVisualStyleBackColor = true;
-            // 
-            // Side_btn_col
-            // 
-            this.Side_btn_col.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(152)))), ((int)(((byte)(0)))));
-            this.Side_btn_col.Location = new System.Drawing.Point(0, 147);
-            this.Side_btn_col.Name = "Side_btn_col";
-            this.Side_btn_col.Size = new System.Drawing.Size(13, 48);
-            this.Side_btn_col.TabIndex = 7;
             // 
             // pic_logo
             // 
@@ -278,18 +231,13 @@
             this.pic_logo.TabIndex = 5;
             this.pic_logo.TabStop = false;
             // 
-            // bt_Borrow
+            // Side_btn_col
             // 
-            this.bt_Borrow.FlatAppearance.BorderSize = 0;
-            this.bt_Borrow.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_Borrow.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.bt_Borrow.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.bt_Borrow.Location = new System.Drawing.Point(12, 263);
-            this.bt_Borrow.Name = "bt_Borrow";
-            this.bt_Borrow.Size = new System.Drawing.Size(153, 48);
-            this.bt_Borrow.TabIndex = 2;
-            this.bt_Borrow.Text = "Borrow";
-            this.bt_Borrow.UseVisualStyleBackColor = true;
+            this.Side_btn_col.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(152)))), ((int)(((byte)(0)))));
+            this.Side_btn_col.Location = new System.Drawing.Point(0, 147);
+            this.Side_btn_col.Name = "Side_btn_col";
+            this.Side_btn_col.Size = new System.Drawing.Size(13, 48);
+            this.Side_btn_col.TabIndex = 7;
             // 
             // bt_Dboard
             // 
@@ -306,6 +254,58 @@
             this.bt_Dboard.Text = "Dashboard";
             this.bt_Dboard.UseVisualStyleBackColor = false;
             this.bt_Dboard.Click += new System.EventHandler(this.bt_Dboard_Click);
+            // 
+            // bt_Borrow
+            // 
+            this.bt_Borrow.FlatAppearance.BorderSize = 0;
+            this.bt_Borrow.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_Borrow.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.bt_Borrow.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.bt_Borrow.Location = new System.Drawing.Point(12, 263);
+            this.bt_Borrow.Name = "bt_Borrow";
+            this.bt_Borrow.Size = new System.Drawing.Size(153, 48);
+            this.bt_Borrow.TabIndex = 2;
+            this.bt_Borrow.Text = "Borrow";
+            this.bt_Borrow.UseVisualStyleBackColor = true;
+            // 
+            // bt_Publisher
+            // 
+            this.bt_Publisher.FlatAppearance.BorderSize = 0;
+            this.bt_Publisher.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_Publisher.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.bt_Publisher.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.bt_Publisher.Location = new System.Drawing.Point(12, 371);
+            this.bt_Publisher.Name = "bt_Publisher";
+            this.bt_Publisher.Size = new System.Drawing.Size(153, 48);
+            this.bt_Publisher.TabIndex = 8;
+            this.bt_Publisher.Text = "Publisher";
+            this.bt_Publisher.UseVisualStyleBackColor = true;
+            // 
+            // bt_Category
+            // 
+            this.bt_Category.FlatAppearance.BorderSize = 0;
+            this.bt_Category.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_Category.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.bt_Category.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.bt_Category.Location = new System.Drawing.Point(12, 425);
+            this.bt_Category.Name = "bt_Category";
+            this.bt_Category.Size = new System.Drawing.Size(153, 48);
+            this.bt_Category.TabIndex = 9;
+            this.bt_Category.Text = "Categoty";
+            this.bt_Category.UseVisualStyleBackColor = true;
+            // 
+            // tb_Person
+            // 
+            this.tb_Person.FlatAppearance.BorderSize = 0;
+            this.tb_Person.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.tb_Person.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.tb_Person.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.tb_Person.Location = new System.Drawing.Point(12, 533);
+            this.tb_Person.Name = "tb_Person";
+            this.tb_Person.Size = new System.Drawing.Size(153, 48);
+            this.tb_Person.TabIndex = 10;
+            this.tb_Person.Text = "Person";
+            this.tb_Person.UseVisualStyleBackColor = true;
             // 
             // lb_dateTime
             // 
@@ -665,7 +665,7 @@
             this.Sub_infp_panel.Controls.Add(this.button2);
             this.Sub_infp_panel.Controls.Add(this.label21);
             this.Sub_infp_panel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.Sub_infp_panel.Location = new System.Drawing.Point(168, 763);
+            this.Sub_infp_panel.Location = new System.Drawing.Point(168, 688);
             this.Sub_infp_panel.Name = "Sub_infp_panel";
             this.Sub_infp_panel.Size = new System.Drawing.Size(1189, 100);
             this.Sub_infp_panel.TabIndex = 23;
@@ -734,6 +734,15 @@
             this.panel4.Size = new System.Drawing.Size(1006, 162);
             this.panel4.TabIndex = 26;
             // 
+            // Borrow
+            // 
+            this.Borrow.Controls.Add(this.pictureBox1);
+            this.Borrow.Controls.Add(this.panel11);
+            this.Borrow.Location = new System.Drawing.Point(805, 9);
+            this.Borrow.Name = "Borrow";
+            this.Borrow.Size = new System.Drawing.Size(200, 159);
+            this.Borrow.TabIndex = 26;
+            // 
             // Persons
             // 
             this.Persons.Controls.Add(this.pictureBox4);
@@ -761,15 +770,6 @@
             this.Writer.Size = new System.Drawing.Size(209, 158);
             this.Writer.TabIndex = 25;
             // 
-            // Borrow
-            // 
-            this.Borrow.Controls.Add(this.pictureBox1);
-            this.Borrow.Controls.Add(this.panel11);
-            this.Borrow.Location = new System.Drawing.Point(805, 9);
-            this.Borrow.Name = "Borrow";
-            this.Borrow.Size = new System.Drawing.Size(200, 159);
-            this.Borrow.TabIndex = 26;
-            // 
             // dashbord_Control1
             // 
             this.dashbord_Control1.Location = new System.Drawing.Point(168, 240);
@@ -788,7 +788,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1357, 863);
+            this.ClientSize = new System.Drawing.Size(1357, 788);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.dashbord_Control1);
             this.Controls.Add(this.books_Control1);
@@ -827,10 +827,10 @@
             this.Sub_infp_panel.ResumeLayout(false);
             this.Sub_infp_panel.PerformLayout();
             this.panel4.ResumeLayout(false);
+            this.Borrow.ResumeLayout(false);
             this.Persons.ResumeLayout(false);
             this.Book.ResumeLayout(false);
             this.Writer.ResumeLayout(false);
-            this.Borrow.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -85,6 +85,24 @@
     </Compile>
     <Compile Include="Borrow.cs" />
     <Compile Include="Connexion.cs" />
+    <Compile Include="C_Person.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="C_Person.Designer.cs">
+      <DependentUpon>C_Person.cs</DependentUpon>
+    </Compile>
+    <Compile Include="C_PersonEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="C_PersonEdit.Designer.cs">
+      <DependentUpon>C_PersonEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="C_PersonSwitch.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="C_PersonSwitch.Designer.cs">
+      <DependentUpon>C_PersonSwitch.cs</DependentUpon>
+    </Compile>
     <Compile Include="Dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -157,6 +175,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Books_Control.resx">
       <DependentUpon>Books_Control.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="C_Person.resx">
+      <DependentUpon>C_Person.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="C_PersonEdit.resx">
+      <DependentUpon>C_PersonEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="C_PersonSwitch.resx">
+      <DependentUpon>C_PersonSwitch.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>

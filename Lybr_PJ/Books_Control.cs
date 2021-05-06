@@ -14,7 +14,7 @@ namespace x_prj_biblio
     {
         DataTable dataTable;
 
-        private Connexion c = LoginForm.c;
+        private Connexion c = LoginForm.con;
         public Books_Control()
         {
             InitializeComponent();
