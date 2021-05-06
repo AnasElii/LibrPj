@@ -47,7 +47,7 @@ namespace x_prj_biblio
             p = new Person();
             c = new Connexion();
 
-            _dataTable = c.showDataTable(string.Format(@"SELECT * FROM dbo.Person  WHERE per_id = '{0}'", p.ID));
+            _dataTable = c.showDataTable(string.Format(@"SELECT * FROM dbo.Person  WHERE per_id = {0}", p.ID));
 
             lb_Uname.Text = _dataTable.Rows[0]["first_name"]+ " " + _dataTable.Rows[0]["last_name"];
 
@@ -115,6 +115,16 @@ namespace x_prj_biblio
             bt_Dboard.BackColor = Color.Transparent;
         }
 
+<<<<<<< Updated upstream
+=======
+        private void tb_Person_Click(object sender, EventArgs e)
+        {
+            Side_btn_col.Height = tb_Person.Height;
+            Side_btn_col.Top = tb_Person.Top;
+            c_PersonSwitch1.BringToFront();
+
+
+>>>>>>> Stashed changes
         private void bt_Writer_Click(object sender, EventArgs e)
         {
             Side_btn_col.Height = bt_Writer.Height;

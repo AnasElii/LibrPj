@@ -16,5 +16,59 @@ namespace x_prj_biblio
         {
             InitializeComponent();
         }
+        public void Hide_pic()
+        {
+            pic_print.Visible = false;
+            pic_delete.Visible = false;
+        }
+        public void ElseHide_pic()
+        {
+            pic_print.Visible = true;
+            pic_edit.Visible = true;
+            pic_delete.Visible = true;
+            pic_add.Visible = true;
+        }
+        private void pic_back_Click(object sender, EventArgs e)
+        {
+            c_Person1.BringToFront();
+            ElseHide_pic();
+        }
+
+        private void pic_edit_Click(object sender, EventArgs e)
+        {
+            if (pic_add.Visible == false)
+            {
+                //Method Edit
+                Console.WriteLine("Edit");
+            }
+            pic_add.Visible = false;
+            c_PersonEdit1.BringToFront();
+            pic_back.BringToFront();
+            Hide_pic();
+        }
+
+        private void pic_add_Click(object sender, EventArgs e)
+        {
+            if (pic_edit.Visible == false)
+            {
+                //Method Add
+                Console.WriteLine("Add");
+                c_PersonEdit1.aDD();
+            }
+            pic_edit.Visible = false;
+            c_PersonEdit1.BringToFront();
+            pic_back.BringToFront();
+            Hide_pic();
+        }
+
+        private void pic_delete_Click(object sender, EventArgs e)
+        {
+            ///delete
+        }
+
+        private void pic_print_Click(object sender, EventArgs e)
+        {
+            //print
+        }
     }
 }

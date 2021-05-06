@@ -93,6 +93,10 @@
 
             this.dashbord_Control1 = new x_prj_biblio.Dashbord_Control();
             this.books_Control1 = new x_prj_biblio.Books_Control();
+<<<<<<< Updated upstream
+=======
+            this.c_PersonSwitch1 = new x_prj_biblio.C_PersonSwitch();
+>>>>>>> Stashed changes
             this.alL_Control1 = new x_prj_biblio.ALL_Control();
             this.Progile_inf_panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic_user)).BeginInit();
@@ -315,6 +319,7 @@
             this.tb_Person.TabIndex = 10;
             this.tb_Person.Text = "Person";
             this.tb_Person.UseVisualStyleBackColor = true;
+            this.tb_Person.Click += new System.EventHandler(this.tb_Person_Click);
             // 
             // lb_dateTime
             // 
@@ -795,6 +800,15 @@
             this.books_Control1.Size = new System.Drawing.Size(1189, 525);
             this.books_Control1.TabIndex = 25;
             // 
+<<<<<<< Updated upstream
+=======
+            // c_PersonSwitch1
+            // 
+            this.c_PersonSwitch1.Location = new System.Drawing.Point(168, 260);
+            this.c_PersonSwitch1.Name = "c_PersonSwitch1";
+            this.c_PersonSwitch1.Size = new System.Drawing.Size(1189, 525);
+            this.c_PersonSwitch1.TabIndex = 27;
+>>>>>>> Stashed changes
             // alL_Control1
             // 
             this.alL_Control1.Location = new System.Drawing.Point(168, 240);
@@ -807,6 +821,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1357, 788);
+            this.Controls.Add(this.c_PersonSwitch1);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.books_Control1);
             this.Controls.Add(this.dashbord_Control1);
@@ -921,6 +936,10 @@
         private System.Windows.Forms.Panel Persons;
         private System.Windows.Forms.Panel Book;
         private System.Windows.Forms.Panel Writer;
+<<<<<<< Updated upstream
+=======
+        private C_PersonSwitch c_PersonSwitch1;
+>>>>>>> Stashed changes
         private ALL_Control alL_Control1;
     }
 }

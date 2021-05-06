@@ -35,6 +35,20 @@ namespace x_prj_biblio
              
         ////////////// ----- Show table ----- /////////////
         public DataTable showDataTable(string Sqlcommand)
+<<<<<<< Updated upstream
+=======
+        {            
+            _con.Open();
+            _cmd = new SqlCommand(Sqlcommand, _con);
+            _dataTable = new DataTable();
+            DataSet set = new DataSet();
+           
+            _dataAdapter = new SqlDataAdapter(_cmd);
+            _dataAdapter.Fill(set);
+            _con.Close();
+            
+            return set.Tables[0];
+>>>>>>> Stashed changes
         {
             if(_con.State != ConnectionState.Open)
             {
@@ -79,6 +93,7 @@ namespace x_prj_biblio
             _con.Close();
 
             return dataTable;
+<<<<<<< Updated upstream
         }
 
         ////////////// ----- get Image ----- //////////////
@@ -103,9 +118,48 @@ namespace x_prj_biblio
             return imgData;
         }
 
+=======
+        }
+
+        ////////////// ----- get Image ----- //////////////
+        public byte[] getImage(int imagId)
+        {
+            _con.Open();
+            
+            string selectQuery = string.Format(@"SELECT image FROM dbo.Images WHERE id = '{0}'", imagId);
+
+            //Select Image
+            
+            cmd = new SqlCommand(selectQuery, _con);
+            dataReader = cmd.ExecuteReader();
+
+            if (dataReader.Read())
+            {
+                imgData = (byte[])dataReader[0];                
+            }
+
+            dataReader.Close();
+            _con.Close();
+            return imgData;
+        }
+
+>>>>>>> Stashed changes
         ////////////// ----- Add Value ----- //////////////
         public int Add_Value(String sqlstring)
         {
+            try
+            {
+                _con.Open();
+                _cmd = new SqlCommand(sqlstring, _con);
+                int numb = _cmd.ExecuteNonQuery();
+                _con.Close();
+                return numb;
+            }
+            catch (SqlException ex)
+            {
+                Console.WriteLine(ex.Number+" "+ex.Message);
+                return 0;
+            }
             _con.Open();
 
             cmd = new SqlCommand(sqlstring,_con);            
