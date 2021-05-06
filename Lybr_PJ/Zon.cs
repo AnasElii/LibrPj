@@ -13,7 +13,7 @@ namespace x_prj_biblio
         private static string _id;
         private string nom;
 
-        private Connexion c = LoginForm.c;
+        private Connexion c;
 
         public string ID
         {

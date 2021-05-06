@@ -19,7 +19,7 @@ namespace x_prj_biblio
         private SqlDataReader reader;
         private Image profImage;
 
-        Connexion c = LoginForm.c;
+        Connexion c ;
         private Person p;
 
         public Dashboard()
@@ -45,6 +45,7 @@ namespace x_prj_biblio
         private void userInfo()
         {            
             p = new Person();
+            c = new Connexion();
 
             _dataTable = c.showDataTable(string.Format(@"SELECT * FROM dbo.Person  WHERE per_id = '{0}'", p.ID));
 

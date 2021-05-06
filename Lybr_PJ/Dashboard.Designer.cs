@@ -78,16 +78,19 @@
             this.label21 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.Borrow = new System.Windows.Forms.Panel();
+
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Persons = new System.Windows.Forms.Panel();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.Book = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.Writer = new System.Windows.Forms.Panel();
+
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.bt_Notif = new System.Windows.Forms.Button();
             this.bt_Exit = new System.Windows.Forms.Button();
             this.bt_Sitt = new System.Windows.Forms.Button();
+
             this.dashbord_Control1 = new x_prj_biblio.Dashbord_Control();
             this.books_Control1 = new x_prj_biblio.Books_Control();
             this.alL_Control1 = new x_prj_biblio.ALL_Control();
@@ -102,13 +105,17 @@
             this.Sub_infp_panel.SuspendLayout();
             this.panel4.SuspendLayout();
             this.Borrow.SuspendLayout();
+
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+
             this.Persons.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.Book.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.Writer.SuspendLayout();
+
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+
             this.SuspendLayout();
             // 
             // panel2
@@ -220,7 +227,7 @@
             this.Side_panel.Dock = System.Windows.Forms.DockStyle.Left;
             this.Side_panel.Location = new System.Drawing.Point(0, 0);
             this.Side_panel.Name = "Side_panel";
-            this.Side_panel.Size = new System.Drawing.Size(168, 863);
+            this.Side_panel.Size = new System.Drawing.Size(168, 788);
             this.Side_panel.TabIndex = 0;
             // 
             // pic_logo
@@ -575,7 +582,7 @@
             this.Sub_infp_panel.Controls.Add(this.button2);
             this.Sub_infp_panel.Controls.Add(this.label21);
             this.Sub_infp_panel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.Sub_infp_panel.Location = new System.Drawing.Point(168, 763);
+            this.Sub_infp_panel.Location = new System.Drawing.Point(168, 688);
             this.Sub_infp_panel.Name = "Sub_infp_panel";
             this.Sub_infp_panel.Size = new System.Drawing.Size(1189, 100);
             this.Sub_infp_panel.TabIndex = 23;
@@ -665,6 +672,7 @@
             this.pictureBox1.TabIndex = 18;
             this.pictureBox1.TabStop = false;
             // 
+
             // Persons
             // 
             this.Persons.Controls.Add(this.pictureBox4);
@@ -716,6 +724,7 @@
             this.Writer.Size = new System.Drawing.Size(209, 158);
             this.Writer.TabIndex = 25;
             // 
+
             // pictureBox3
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(220)))), ((int)(((byte)(255)))));
@@ -797,7 +806,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1357, 863);
+            this.ClientSize = new System.Drawing.Size(1357, 788);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.books_Control1);
             this.Controls.Add(this.dashbord_Control1);
@@ -834,13 +843,17 @@
             this.Sub_infp_panel.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.Borrow.ResumeLayout(false);
+
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+
             this.Persons.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.Book.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.Writer.ResumeLayout(false);
+
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+
             this.ResumeLayout(false);
             this.PerformLayout();
 

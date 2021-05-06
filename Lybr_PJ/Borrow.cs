@@ -17,7 +17,7 @@ namespace x_prj_biblio
 
         private SqlCommand cmd;
 
-        Connexion c = LoginForm.c;
+        Connexion c;
         private Person p;
         private Books b;
 
@@ -49,6 +49,7 @@ namespace x_prj_biblio
         {
             p = new Person();
             b = new Books();
+            c = new Connexion();
         }
 
         public Borrow(String id, DateTime datebeg, DateTime dateend, float fresh)

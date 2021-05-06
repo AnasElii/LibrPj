@@ -20,7 +20,7 @@ namespace x_prj_biblio
 
         private Connexion c;
         private Books b;
-
+        
         public Books_Control()
         {
             InitializeComponent();

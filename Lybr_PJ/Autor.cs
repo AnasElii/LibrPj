@@ -14,7 +14,7 @@ namespace x_prj_biblio
         private string nom;
         private DateTime birth_date;
 
-        Connexion c = LoginForm.c;
+        Connexion c;
 
         public string ID
         {
@@ -36,7 +36,7 @@ namespace x_prj_biblio
 
         public Autor()
         {
-
+            c = new Connexion();
         }
 
         public Autor(String nom, DateTime birth_date)

@@ -24,8 +24,7 @@ namespace x_prj_biblio
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Add_Borrowing add_Borrowing = new Add_Borrowing();
-            add_Borrowing.Show();
+           
         }
 
         private void Gerer_Borrowing_Load(object sender, EventArgs e)
