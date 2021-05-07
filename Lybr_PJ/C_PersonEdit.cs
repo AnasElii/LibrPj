@@ -77,5 +77,10 @@ namespace x_prj_biblio
                 _TPhone.Visible = false;
             }
         }
+
+        private void C_PersonEdit_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

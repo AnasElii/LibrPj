@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.Xml.Linq;
 
 namespace x_prj_biblio
 {
@@ -23,11 +24,6 @@ namespace x_prj_biblio
         private byte[] image;
 
         
-        private SqlCommand cmd;
-
-        Connexion c ;
-
-
 
         public int ID
         {
@@ -85,7 +81,7 @@ namespace x_prj_biblio
         }
         public Person()
         {
-            c = new Connexion();
+
         }
         public Person(int id,string email, string pswrd, string firstname, string lastname, DateTime dateins, DateTime birthdate, string phone,bool pertype,byte[] image):this()
         {
@@ -107,7 +103,13 @@ namespace x_prj_biblio
 
         public static int AddPersson(Person person)
         {
-            return LoginForm.con.Add_Value("EXECUTE I_PERSSON '"+person.firstname+"','"+person.lastname+"','"+person.birthdate+"','"+person.phone+"','"+person.password+"','"+person._email+"',"+person.pertype+",0x"+ String.Join<byte>("", person.image));
+            Connexion c = new Connexion();c.Con.Open();
+           SqlCommand cmd = new SqlCommand("EXECUTE I_PERSSON '" + person.firstname + "','" + person.lastname + "','" + person.birthdate + "','" + person.phone + "','" + person.password + "','" + person._email + "'," + person.pertype + ",@image",c.Con);
+            cmd.Parameters.Add("@image", SqlDbType.VarBinary);
+            cmd.Parameters["@image"].Value = person.image;
+            int x = cmd.ExecuteNonQuery();
+            c.Con.Close();
+            return x;
         }
         public static int DeletePersson(int per_id)
         {
@@ -126,12 +128,34 @@ namespace x_prj_biblio
             person.Password = data.Rows[0].ItemArray[6].ToString();
             person.Email = data.Rows[0].ItemArray[7].ToString();
             person.Pertype = Convert.ToBoolean(data.Rows[0].ItemArray[8]);
-            //person.image = data.Rows[0].ItemArray[9];
-            var age = data.Rows[0].ItemArray[9];
-
-
-
+            person.image = (byte[])data.Rows[0].ItemArray[9];
+                    
             return person;
+        }
+        public Person ReadFileXML()
+        {
+            try
+            {
+                XElement[] list = XDocument.Load("persson.xml").Descendants().ToArray();
+                Person person = new Person();
+                person.ID = Convert.ToInt32(list[2].Value);
+                person.Firstname = list[3].Value;
+                person.LastName = list[4].Value;
+                person.Dateins = Convert.ToDateTime(list[5].Value);
+                person.BirthDate = Convert.ToDateTime(list[6].Value);
+                person.Phone = list[7].Value;
+                person.Password = list[8].Value;
+                person.Email = list[9].Value;
+                person.Pertype = Convert.ToBoolean(list[10].Value);
+                Connexion c = new Connexion(); c.Con.Open();
+                person.Image = c.getImage(Convert.ToInt32(new SqlCommand("select image_id from person where per_id=" + person.ID, c.Con).ExecuteScalar().ToString())); c.Con.Close();
+                return person;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return new Person();
+            }
         }
 
     }

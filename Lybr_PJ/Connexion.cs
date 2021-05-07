@@ -92,6 +92,7 @@ namespace x_prj_biblio
         {
             try
             {
+                if(_con.State != ConnectionState.Open)
                 _con.Open();
                 string selectQuery = string.Format(@"SELECT image FROM dbo.Images WHERE id = {0}", imagId);
                 //Select Image
@@ -161,7 +162,6 @@ namespace x_prj_biblio
             catch (SqlException ex)
             {
                 Console.WriteLine(ex.Message);
-                throw;
             }
         }
     }

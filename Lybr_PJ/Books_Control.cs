@@ -133,5 +133,10 @@ namespace x_prj_biblio
 
             dataGridRefresh();
         }
+
+        private void addBook1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

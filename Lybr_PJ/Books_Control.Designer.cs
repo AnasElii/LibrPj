@@ -400,6 +400,7 @@
             this.addBook1.Size = new System.Drawing.Size(1189, 525);
             this.addBook1.TabIndex = 57;
             this.addBook1.Visible = false;
+            this.addBook1.Load += new System.EventHandler(this.addBook1_Load);
             // 
             // Books_Control
             // 

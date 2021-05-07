@@ -251,6 +251,7 @@ namespace x_prj_biblio
             this.Controls.Add(this._TPimage);
             this.Name = "C_PersonEdit";
             this.Size = new System.Drawing.Size(1189, 525);
+            this.Load += new System.EventHandler(this.C_PersonEdit_Load);
             ((System.ComponentModel.ISupportInitialize)(this._TPimage)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -258,10 +259,6 @@ namespace x_prj_biblio
         }
 
         #endregion
-
-        private System.Windows.Forms.CheckBox _Tpertype;
-        private System.Windows.Forms.DateTimePicker _TDatebirth;
-        private System.Windows.Forms.DateTimePicker _TDateRegister;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
@@ -270,12 +267,15 @@ namespace x_prj_biblio
         private System.Windows.Forms.Label ds;
         private System.Windows.Forms.Label dva;
         private System.Windows.Forms.Label sda;
-        private System.Windows.Forms.TextBox _TEmail;
-        private System.Windows.Forms.TextBox _Tpass;
-        private System.Windows.Forms.TextBox _TPhone;
-        private System.Windows.Forms.TextBox _TLastName;
-        private System.Windows.Forms.TextBox _TFirstName;
-        private System.Windows.Forms.TextBox _TID;
-        private System.Windows.Forms.PictureBox _TPimage;
+        public System.Windows.Forms.CheckBox _Tpertype;
+        public System.Windows.Forms.DateTimePicker _TDatebirth;
+        public System.Windows.Forms.DateTimePicker _TDateRegister;
+        public System.Windows.Forms.TextBox _TEmail;
+        public System.Windows.Forms.TextBox _Tpass;
+        public System.Windows.Forms.TextBox _TPhone;
+        public System.Windows.Forms.TextBox _TLastName;
+        public System.Windows.Forms.TextBox _TFirstName;
+        public System.Windows.Forms.TextBox _TID;
+        public System.Windows.Forms.PictureBox _TPimage;
     }
 }
