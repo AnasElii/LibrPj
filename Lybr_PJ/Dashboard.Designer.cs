@@ -776,7 +776,7 @@
             // 
             // c_PersonSwitch2
             // 
-            this.c_PersonSwitch2.Location = new System.Drawing.Point(156, 240);
+            this.c_PersonSwitch2.Location = new System.Drawing.Point(168, 236);
             this.c_PersonSwitch2.Name = "c_PersonSwitch2";
             this.c_PersonSwitch2.Size = new System.Drawing.Size(1189, 525);
             this.c_PersonSwitch2.TabIndex = 28;

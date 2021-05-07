@@ -18,7 +18,7 @@ namespace x_prj_biblio
             InitializeComponent();
         }
         Person person;
-        public void aDD()
+        public int aDD()
         {
             try
             {
@@ -35,11 +35,38 @@ namespace x_prj_biblio
                     _TPimage.Image.Save(stream, System.Drawing.Imaging.ImageFormat.Png);
                     person.Image = stream.ToArray();
                 }
-                Person.AddPersson(person);
+                return Person.AddPersson(person);
             }
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
+                return 0;
+            }
+        }
+        public int Edit()
+        {
+            try
+            {
+                person = new Person();
+                person.ID = Convert.ToInt32(_TID.Text);
+                person.Firstname = _TFirstName.Text;
+                person.LastName = _TLastName.Text;
+                person.BirthDate = _TDatebirth.Value;
+                person.Phone = _TPhone.Text;
+                person.Password = _Tpass.Text;
+                person.Email = _TEmail.Text;
+                person.Pertype = _Tpertype.Checked;
+                using (MemoryStream stream = new MemoryStream())
+                {
+                    _TPimage.Image.Save(stream, System.Drawing.Imaging.ImageFormat.Png);
+                    person.Image = stream.ToArray();
+                }
+                return Person.EditPersson(person);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return 0;
             }
         }
 
@@ -65,7 +92,6 @@ namespace x_prj_biblio
                 label8.Visible = true;
                 _TEmail.Visible = true;
                 _Tpass.Visible = true;
-                _TPhone.Visible = true;
             }
             else
             {
@@ -74,7 +100,6 @@ namespace x_prj_biblio
                 label8.Visible = false;
                 _TEmail.Visible = false;
                 _Tpass.Visible = false;
-                _TPhone.Visible = false;
             }
         }
 

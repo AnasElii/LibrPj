@@ -121,7 +121,8 @@ namespace x_prj_biblio
             Side_btn_col.Height = tb_Person.Height;
             Side_btn_col.Top = tb_Person.Top;
             c_PersonSwitch2.BringToFront();
-
+            c_PersonSwitch2.c_Person1.Actualiser();
+            
          }
         private void bt_Writer_Click(object sender, EventArgs e)
         {

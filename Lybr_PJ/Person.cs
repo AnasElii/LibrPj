@@ -111,6 +111,16 @@ namespace x_prj_biblio
             c.Con.Close();
             return x;
         }
+        public static int EditPersson(Person person)
+        {
+            Connexion c = new Connexion(); c.Con.Open();
+            SqlCommand cmd = new SqlCommand("EXECUTE U_PERSSON "+person.ID+",'" + person.firstname + "','" + person.lastname + "','" + person.birthdate + "','" + person.phone + "','" + person.password + "','" + person._email + "'," + person.pertype + ",@image", c.Con);
+            cmd.Parameters.Add("@image", SqlDbType.VarBinary);
+            cmd.Parameters["@image"].Value = person.image;
+            int x = cmd.ExecuteNonQuery();
+            c.Con.Close();
+            return x;
+        }
         public static int DeletePersson(int per_id)
         {
             return LoginForm.con.Add_Value("EXECUTE D_PERSSON "+per_id);
@@ -156,6 +166,14 @@ namespace x_prj_biblio
                 Console.WriteLine(ex.Message);
                 return new Person();
             }
+        }
+
+        public static DataTable Sys_Search(String name)
+        {
+            Connexion c = new Connexion(); c.Con.Open();
+            DataTable data = c.showDataTable("exec _SearchPerson '"+name+"'");
+            c.Con.Close();
+            return data;
         }
 
     }

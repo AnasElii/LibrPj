@@ -144,6 +144,6 @@ namespace x_prj_biblio
         private System.Windows.Forms.PictureBox pic_delete;
         private System.Windows.Forms.PictureBox pic_back;
         private C_PersonEdit c_PersonEdit1;
-        private C_Person c_Person1;
+        public C_Person c_Person1;
     }
 }
